@@ -6,7 +6,7 @@ import Favicon from '../../images/favicon.png';
 import Footer from '../../components/Footer';
 import { createMetadata } from '../../utils';
 import Section from '../../components/Section';
-import { getScores } from '../../scores';
+import { getScores, rounds } from '../../scores';
 
 import './index.less';
 
@@ -55,7 +55,8 @@ const IndexPage = () => (
             </table>
             <p style={{ fontSize: '0.6em' }}>D=Deltatt, F=Feilet i å møte</p>
             <p class="small">
-                Resultat etter 4 runder.
+                Resultat etter {rounds.length} runder med{' '}
+                {rounds.map(({ head }) => head).join(', ')}
             </p>
         </Section>
         <Footer />
