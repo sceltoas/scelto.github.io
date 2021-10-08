@@ -13,13 +13,10 @@ import Ivar from './images/mugshots/ivar.jpg';
 import Vetle from './images/mugshots/vetle.jpg';
 import Sean from './images/mugshots/sean.jpg';
 import Ken from './images/mugshots/ken.jpg';
-import LarsFredrik from './images/mugshots/larsfredrik.jpg';
 import FredrikB from './images/mugshots/fredrikb.jpg';
 import FredrikS from './images/mugshots/fredriks.jpg';
 import Terje from './images/mugshots/terje.jpg';
 import LarsOlav from './images/mugshots/larsolav.jpg';
-import Jarle from './images/mugshots/jarle.jpg';
-import JanTore from './images/mugshots/jantore.jpg';
 import AnnKatrin from './images/mugshots/annkatrin.jpg';
 import Jorgen from './images/mugshots/jorgen.jpg';
 import Andreas from './images/mugshots/andreas.jpg';
@@ -28,7 +25,9 @@ import Haakon from './images/mugshots/haakon.jpg';
 import Frederik from './images/mugshots/frederik.jpg';
 import Bard from './images/mugshots/baard.jpg';
 import Ismar from './images/mugshots/ismar.jpg';
-/*import NoPicYet from './images/mugshots/no-pic-yet.jpg';*/
+import Eirik from './images/mugshots/eirik.jpg';
+import ErikE from './images/mugshots/erike.jpg';
+// import NoPicYet from './images/mugshots/no-pic-yet.jpg';
 
 import TorEricCV from './cvs/Tor_Eric_Sandvik.pdf';
 import OleTommyCV from './cvs/Ole_Tommy_Lid-Strand.pdf';
@@ -45,7 +44,6 @@ import IvarCV from './cvs/Ivar_Nilsen.pdf';
 import VetleCV from './cvs/Vetle_Valebjørg.pdf';
 import SeanCV from './cvs/Sean_Erik_Scully.pdf';
 import KenCV from './cvs/Ken_Gullaksen.pdf';
-import LarsFredrikCV from './cvs/Lars_Fredrik_Lunde.pdf';
 import FredrikbCV from './cvs/Fredrik_Bjørnøy.pdf';
 import FredriksCV from './cvs/Fredrik_Svensen.pdf';
 import TerjeCV from './cvs/Terje_Lonoy.pdf';
@@ -57,6 +55,8 @@ import HallvardCV from './cvs/Hallvard_Andreas_Stark.pdf';
 import IsmarCV from './cvs/Ismar_Slomic.pdf';
 import HaakonCV from './cvs/Håkon_Hobæk.pdf';
 import FrederikCV from './cvs/Frederik_Skytte.pdf';
+import EirikCV from './cvs/Eirik_Bergande.pdf';
+import ErikeCV from './cvs/Erik_Eiesland.pdf';
 
 import Drinker from './images/drinker.jpeg';
 import Skateboard from './images/skateboard.jpg';
@@ -78,9 +78,7 @@ import Yoga from './images/yoga.jpeg';
 import FrederikBackground from './images/frederik-background.jpg';
 import HaakonBackground from './images/haakon-background.jpg';
 import ansatte from './ansatte';
-import {
-    showAvailableConsultantsFirst
-} from './utils';
+import { showAvailableConsultantsFirst } from './utils';
 
 export const ansatteMedAssets = {
     toreric: {
@@ -173,12 +171,6 @@ export const ansatteMedAssets = {
         linkToCV: KenCV,
         customImage: RustenBil,
     },
-    larsfredrik: {
-        ...ansatte.larsfredrik,
-        image: LarsFredrik,
-        linkToCV: LarsFredrikCV,
-        customImage: RustenBil,
-    },
     fredrikb: {
         ...ansatte.fredrikb,
         image: FredrikB,
@@ -202,18 +194,6 @@ export const ansatteMedAssets = {
         image: LarsOlav,
         linkToCV: LarsOlavCV,
         customImage: Cards,
-    },
-    jarle: {
-        ...ansatte.jarle,
-        image: Jarle,
-        linkToCV: '#',
-        customImage: Music,
-    },
-    jantore: {
-        ...ansatte.jantore,
-        image: JanTore,
-        linkToCV: '#',
-        customImage: Music,
     },
     annkatrin: {
         ...ansatte.annkatrin,
@@ -262,6 +242,18 @@ export const ansatteMedAssets = {
         image: Frederik,
         linkToCV: FrederikCV,
         customImage: FrederikBackground,
+    },
+    eirik: {
+        ...ansatte.eirik,
+        image: Eirik,
+        linkToCV: EirikCV,
+        customImage: Nerd,
+    },
+    erike: {
+        ...ansatte.erike,
+        image: ErikE,
+        linkToCV: ErikeCV,
+        customImage: Yoga,
     },
 };
 

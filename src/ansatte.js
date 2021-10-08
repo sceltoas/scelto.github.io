@@ -357,24 +357,6 @@ var ansatte = {
             'Ellers er Ken en blid og hyggelig person som på fritiden driver med karate og bygger ting til sine to døtre.',
         ],
     },
-    larsfredrik: {
-        name: 'Lars Fredrik Lunde',
-        title: 'Seniorkonsulent',
-        endOfContract: '2020-08-31',
-        firstName: 'Lars Fredrik',
-        ingress:
-            'Lars Fredrik er en fremadstormende og engasjert systemutvikler som har spesialisert seg på utvikling og vedlikehold av løsninger basert på C#.',
-        keyFeatures: ['Systemutvikler', '.Net', 'Fullstack', 'Webteknologier'],
-        email: 'vetle@scelto.no',
-        linkedIn: '',
-        twitter: '',
-        github: '',
-        mainSection: [
-            'Lars Fredrik er dyktig på interaksjon med brukergrupper, og jobber aktivt for å bedre brukeropplevelsen i sine prosjekter. I sitt daglige arbeide har han fokus på å levere høy kvalitet på det han utvikler i henhold til best practice i samarbeid med prosjektteamet.',
-            'Han liker å holde seg oppdatert på teknologi og trender, samt å dele denne kunnskapen med andre i fagmiljøet. Han har blant annet hatt rollen som fagansvarlig innen .NET-miljøet og er Microsoft Sertified Developer. I tillegg har Lars Fredrik 10 års erfaring med utvikling av webløsninger.',
-            'Ellers er Lars Fredrik en driftig, utadvendt og ansvarsfull ressurs som tilstreber å yte sitt beste på hvert prosjekt.',
-        ],
-    },
     fredrikb: {
         name: 'Fredrik Bjørnøy',
         title: 'Seniorkonsulent',
@@ -448,42 +430,6 @@ var ansatte = {
         mainSection: [
             'Selv om Lars Olav er fullstack utvikler er det frontend-utvikling han virkelig brenner for. Det er viktig for han at webløsningene han lager er brukervennlige med responsivt design og han elsker prosjekter hvor han får laget løsninger som oppfyller kravene til en Progressive Web App (PWA).',
             'De siste årene har han jobbet for Giant Leap Technologies og deres kunder, som tech lead for webutvikling. Her har han fått være involvert i alle nivåer av løsningsprosessen. Lars Olav er en ansvarsbevisst teammedarbeider og liker å drive utviklingen fremover.På privaten er Lars Olav en meget sosial person som er glad i å trene agility med hundene sine og jobbe med hobbyprosjekter.',
-        ],
-    },
-    jarle: {
-        name: 'Jarle Berentzen',
-        title: 'Seniorkonsulent',
-        endOfContract: '2019-12-31',
-        firstName: 'Jarle',
-        ingress:
-            'Jarle har jobbet i IT-bransjen siden 2004, og har bred erfaring som systemutvikler, teknisk arkitekt og teamleder. Fokuset hans har vært på Java-teknologi og integrasjon mellom systemer men han har også jobbet noe i front-end og med mobil teknologi.',
-        keyFeatures: ['Java', 'Integrasjon', 'Teknisk Arkitekt'],
-        email: 'jarle@scelto.no',
-        linkedIn: 'jarle-berentzen-59a23821',
-        twitter: 'jberentzen',
-        github: 'jarledb',
-        mainSection: [
-            'I hans arbeid som systemutvikler har han ofte hatt et sterkt fokus på automatisering av manuelle oppgaver og utvikling av forretningslogikk. Som arkitekt har Jarle hatt høy fokus på modularisering, strukturering og standardisering av kode.',
-            'Jarle er en dedikert teknolog som er faglig interessert og oppdatert på rammeverk og teknologier. Jarle har erfaring med Smidig utvikling både som utvikler og som teamleder/scrum master.',
-            'Jarle er en god og ryddig kommunikator som inngir tillit både for kunden og blant øvrige teammedlemmer. Han evner også å sette seg inn i kundens forretning, mål og planer. Jarle trives veldig godt i dialog med kunden, og han liker å jobbe i selvorganiserende team hvor man han utfylle hverandre.',
-        ],
-    },
-    jantore: {
-        name: 'Jan Tore Stølsvik',
-        title: 'Seniorkonsulent',
-        endOfContract: '2019-12-31',
-        firstName: 'Jan Tore',
-        ingress:
-            'Jan Tore jobber som systemutvikler med hovedinteresse for React og GraphQL. Han har stort fokus på best practise og smidige metoder.',
-        keyFeatures: ['React', 'Frontend', 'Java'],
-        email: 'jan.tore@scelto.no',
-        linkedIn: 'jan-tore-stølsvik-49320a81',
-        twitter: '',
-        github: 'jantorestolsvik',
-        mainSection: [
-            'Jan Tore jobber som systemutvikler med hovedinteresse for React og GraphQL. Han har stort fokus på best practise og smidige metoder.',
-            'Som følge av et utvekslingsår i Singapore har han jobbet på flere prosjekter med internasjonale studenter og kommuniserer derfor like godt på engelsk som på norsk. Jan Tore har holdt foredrag mange ganger på f.eks. JavaZone og NDC.',
-            'Jan Tore arbeider hardt, er positiv og løsningsorientert i møte med utfordrende oppgaver. Han er glad i å lære nye ting og jobber godt sammen med andre, samtidig som han er selvstendig.',
         ],
     },
     annkatrin: {
@@ -618,18 +564,16 @@ var ansatte = {
         title: 'Seniorkonsulent',
         endOfContract: '2020-12-31',
         firstName: 'Håkon',
-        ingress: 'Håkon har en bachelor og master i matematikk, og en bachelor i informatikk fra UiO. Han har erfaring fra 2012 som utvikler. Han har erfaring fra flere komplekse prosjekter innen privat og sikkerhets/forsvar sektor som Kongsberggruppen, Thales, og Sintef.',
-        keyFeatures: [
-            'Frontend med React',
-            'Backend med C#'
-        ],
+        ingress:
+            'Håkon har en bachelor og master i matematikk, og en bachelor i informatikk fra UiO. Han har erfaring fra 2012 som utvikler. Han har erfaring fra flere komplekse prosjekter innen privat og sikkerhets/forsvar sektor som Kongsberggruppen, Thales, og Sintef.',
+        keyFeatures: ['Frontend med React', 'Backend med C#'],
         linkedIn: 'håkon-hobæk-0539bb13',
         mainSection: [
             'Han er en engasjert utvikler som brenner for læring. Han har sine primære kompetanseområder innenfor javascript og .net. Han har også utdannelse og kompetanse innen matematikk og fysikk.  Han har arbeidet med dokumentasjon og implementasjon av avanserte matematiske modeller.',
             'Håkon elsker å løse problemer. Han finner det spennende med nye domener. For øyeblikket trives han aller best med javascript og frontendutvikling.',
             'Han har høy arbeidskapasitet, er strukturert og forutsigbar og opptatt av å levere resultater. Han jobber selvstendig, men er også åpen og lett å samarbeide med. Han påtar seg oppgaver og ansvar som en naturlig del av hverdagen.',
-            'På fritiden er Håkon en aktiv person som bruker hver mulighet han kan til å reise. Ellers er det historie, geopolitikk, bøker og trening som opptar fritiden.'
-        ]
+            'På fritiden er Håkon en aktiv person som bruker hver mulighet han kan til å reise. Ellers er det historie, geopolitikk, bøker og trening som opptar fritiden.',
+        ],
     },
     frederik: {
         name: 'Frederik Skytte',
@@ -651,6 +595,52 @@ var ansatte = {
         mainSection: [
             'I rollen som utvikler er Frederik allsidig, men har aller størst kompetanse på Java/Kotlin og utvikling av native Android apper. Som spesialkompetanse har Frederik gjennom både studier og prosjekter fokusert på mobil teknologi og utvikling. Denne kompetansen er tatt i bruk ved design og utvikling av Android-, iOS- og kryss-plattform applikasjoner for Mattilsynet, CargoNet, Bufdir, VingCard, HiOA, Norsk Luftambulanse, Ruter, Computas og Politiet.',
             'Frederik har gode samarbeidsevner, noe som kombinert med hans solide tekniske kompetanse gjør ham til en sentral bidragsyter i alle prosjekter han deltar i. Det gjør at han ofte tar et overordnet ansvar både for teknologi og funksjonalitet.  Han har gjennom sin erfaring gjort løsningsbeskrivelser, interaksjonsdesign, utvikling, rådgivning, prosjektledelse, testing og teknisk ledelse.',
+        ],
+    },
+    eirik: {
+        name: 'Eirik Bergande',
+        title: 'Seniorkonsulent',
+        endOfContract: '2019-12-31',
+        firstName: 'Eirik',
+        ingress:
+            'Eirik har erfaring som utvikler og teknisk arkitekt siden 2007. Er utdannet Sivilingeniør i Datateknikk fra NTNU og har opparbeidet seg bred erfaring fra ulike store og komplekse prosjekter hos ulike kunder i offentlig og privat regi. Disse inkluderer blant annet NAV, Telenor, Norgesgruppen og Sparebank1.',
+        keyFeatures: [
+            'Systemutvikler Java',
+            'DevOps',
+            'Skyteknologi',
+            'Teknisk Arkitekt',
+        ],
+        email: 'eirik@scelto.no',
+        linkedIn: 'eirik-bergande-047b7b1',
+        twitter: '',
+        github: 'bergande',
+        mainSection: [
+            'Eirik jobber primært med backend og infrastruktur innenfor Java og økosystemet rundt. Han har høy kompetanse og interesse innenfor mikrotjenestearkitektur, cloudteknologi, DevOps og smidig arbeidsmetodikk. Han er opptatt av løsninger som skalerer, er robuste og mener at kode må i produksjon så fort som overhode mulig. På grunn av dette har han fokus på kontinuerlige leveranser, automatiserte tester og hyppige leveranser.',
+            'Eirik har høy arbeidskapasitet, jobber godt sammen med andre og har god evne til å se helheten i løsninger. På fritiden er Eirik en sosial type som liker musikkfestivaler, bøker og gaming.',
+        ],
+    },
+    erike: {
+        name: 'Erik Eiesland',
+        title: 'Seniorkonsulent',
+        endOfContract: '2019-12-31',
+        firstName: 'Erik',
+        ingress:
+            'Erik er en senior fullstack-utvikler med lang og bred erfaring med utvikling av moderne webløsninger og mikrotjenestearkitektur. Han har gjennom flere år opparbeidet seg mye kunnskap om implementasjon og design av frontend med React og TypeScript.',
+        keyFeatures: [
+            'Systemutvikler Java',
+            'Fullstack',
+            'React og Node.js',
+            'GraphQL',
+            'TypeScript',
+            'OpenID Connect',
+        ],
+        email: 'erik.eiesland@scelto.no',
+        linkedIn: 'erik-eiesland-22347497',
+        twitter: '',
+        github: 'di0nys1us',
+        mainSection: [
+            'Erik elsker programmeringsspråk og bruker ofte fritiden sin til å sette seg inn i nye språk. Han synes dette gir gode innblikk i andre måter og tenke på som kan brukes i det daglige arbeidet med Java eller TypeScript. Erik er svært opptatt av å bruke all mulig tid til å gi verdi til kundene han jobber for gjennom automatisering av flest mulig oppgaver. På denne måten kan han fokusere på å levere forretningsverdi til kunden.',
+            'På fritiden er Erik glad i å sykle, game og trene på treningssenter. Han er også blitt rimelig interiørinteressert etter å ha kjøpt seg ny leilighet.',
         ],
     },
 };

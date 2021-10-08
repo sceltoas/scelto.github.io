@@ -336,7 +336,7 @@ function calcScore(participant) {
     let totalScore = 0;
     let scores = [];
     let scoreValues = [];
-    _.each(participant.results, function (result, i) {
+    _.each(participant.results, function(result, i) {
         let event = rounds[i];
         let numberOfScoredPlaces = event.points.length;
 
@@ -363,7 +363,7 @@ function calcScore(participant) {
 function calcCountingScore(participant) {
     // participation = -1, non-participation = -2
     let totalScore = 0;
-    _.each(participant.scoreValues.slice(0).sort(compareNumbers), function (
+    _.each(participant.scoreValues.slice(0).sort(compareNumbers), function(
         result,
         i
     ) {
