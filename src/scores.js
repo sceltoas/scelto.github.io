@@ -13,6 +13,7 @@ const participants = [
             PARTICIPATED,
             4,
             PARTICIPATED,
+            NOT_PARTICIPATED,
         ],
     },
     {
@@ -24,6 +25,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            4,
         ],
     },
     {
@@ -35,11 +37,20 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
         ],
     },
     {
         name: 'Jan Erik',
-        results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, 2, 3, PARTICIPATED],
+        results: [
+            PARTICIPATED,
+            PARTICIPATED,
+            PARTICIPATED,
+            2,
+            3,
+            PARTICIPATED,
+            PARTICIPATED,
+        ],
     },
     {
         name: 'Herman',
@@ -50,15 +61,32 @@ const participants = [
             PARTICIPATED,
             NOT_PARTICIPATED,
             PARTICIPATED,
+            PARTICIPATED,
         ],
     },
     {
         name: 'Ole-André',
-        results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, 4, 2, PARTICIPATED],
+        results: [
+            PARTICIPATED,
+            PARTICIPATED,
+            PARTICIPATED,
+            4,
+            2,
+            PARTICIPATED,
+            NOT_PARTICIPATED,
+        ],
     },
     {
         name: 'Tor Eric',
-        results: [3, PARTICIPATED, 3, PARTICIPATED, 3, PARTICIPATED],
+        results: [
+            3,
+            PARTICIPATED,
+            3,
+            PARTICIPATED,
+            3,
+            PARTICIPATED,
+            NOT_PARTICIPATED,
+        ],
     },
     {
         name: 'Tom Erik',
@@ -68,6 +96,7 @@ const participants = [
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             4,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED,
         ],
     },
@@ -80,6 +109,7 @@ const participants = [
             PARTICIPATED,
             3,
             PARTICIPATED,
+            3,
         ],
     },
     {
@@ -91,15 +121,32 @@ const participants = [
             PARTICIPATED,
             2,
             PARTICIPATED,
+            PARTICIPATED,
         ],
     },
     {
         name: 'Erlend',
-        results: [PARTICIPATED, PARTICIPATED, PARTICIPATED, 3, 1, PARTICIPATED],
+        results: [
+            PARTICIPATED,
+            PARTICIPATED,
+            PARTICIPATED,
+            3,
+            1,
+            PARTICIPATED,
+            PARTICIPATED,
+        ],
     },
     {
         name: 'Marius',
-        results: [PARTICIPATED, 4, NOT_PARTICIPATED, PARTICIPATED, 2, 1],
+        results: [
+            PARTICIPATED,
+            4,
+            NOT_PARTICIPATED,
+            PARTICIPATED,
+            2,
+            1,
+            PARTICIPATED,
+        ],
     },
     {
         name: 'Erik S',
@@ -110,6 +157,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
         ],
     },
     {
@@ -120,6 +168,7 @@ const participants = [
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
+            1,
             1,
         ],
     },
@@ -132,15 +181,32 @@ const participants = [
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
         ],
     },
     {
         name: 'Richard',
-        results: [PARTICIPATED, 1, PARTICIPATED, 1, PARTICIPATED, PARTICIPATED],
+        results: [
+            PARTICIPATED,
+            1,
+            PARTICIPATED,
+            1,
+            PARTICIPATED,
+            PARTICIPATED,
+            NOT_PARTICIPATED,
+        ],
     },
     {
         name: 'Fredrik B',
-        results: [PARTICIPATED, 3, PARTICIPATED, PARTICIPATED, 4, 1],
+        results: [
+            PARTICIPATED,
+            3,
+            PARTICIPATED,
+            PARTICIPATED,
+            4,
+            1,
+            NOT_PARTICIPATED,
+        ],
     },
     {
         name: 'Fredrik S',
@@ -151,6 +217,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
         ],
     },
     {
@@ -160,6 +227,7 @@ const participants = [
             NOT_PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            1,
             1,
             1,
         ],
@@ -173,6 +241,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
         ],
     },
     {
@@ -184,6 +253,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             1,
+            PARTICIPATED,
         ],
     },
     {
@@ -195,6 +265,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
         ],
     },
     {
@@ -206,17 +277,7 @@ const participants = [
             PARTICIPATED,
             3,
             PARTICIPATED,
-        ],
-    },
-    {
-        name: 'Jan Tore',
-        results: [
-            PARTICIPATED,
-            PARTICIPATED,
-            PARTICIPATED,
-            PARTICIPATED,
-            PARTICIPATED,
-            PARTICIPATED,
+            3,
         ],
     },
     {
@@ -228,6 +289,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
         ],
     },
     {
@@ -238,6 +300,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             4,
+            PARTICIPATED,
             PARTICIPATED,
         ],
     },
@@ -250,6 +313,7 @@ const participants = [
             PARTICIPATED,
             1,
             1,
+            NOT_PARTICIPATED,
         ],
     },
     {
@@ -261,6 +325,7 @@ const participants = [
             NOT_PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            4,
         ],
     },
     {
@@ -272,6 +337,7 @@ const participants = [
             PARTICIPATED,
             2,
             PARTICIPATED,
+            1,
         ],
     },
     {
@@ -283,6 +349,7 @@ const participants = [
             PARTICIPATED,
             NOT_PARTICIPATED,
             1,
+            NOT_PARTICIPATED,
         ],
     },
     {
@@ -294,6 +361,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
         ],
     },
 ];
@@ -329,6 +397,11 @@ export const rounds = [
         points: [300],
         participationScore: 100,
     },
+    {
+        head: 'Frisbeegolf (2021)',
+        points: [400, 300, 200, 150],
+        participationScore: 100,
+    },
 ];
 
 function calcScore(participant) {
@@ -336,7 +409,7 @@ function calcScore(participant) {
     let totalScore = 0;
     let scores = [];
     let scoreValues = [];
-    _.each(participant.results, function(result, i) {
+    _.each(participant.results, function (result, i) {
         let event = rounds[i];
         let numberOfScoredPlaces = event.points.length;
 
@@ -361,16 +434,10 @@ function calcScore(participant) {
 }
 
 function calcCountingScore(participant) {
-    // participation = -1, non-participation = -2
-    let totalScore = 0;
-    _.each(participant.scoreValues.slice(0).sort(compareNumbers), function(
-        result,
-        i
-    ) {
-        totalScore += result;
-    });
-
-    participant.countingScore = totalScore;
+    participant.countingScore = participant.scoreValues.reduce(
+        (acc, curr) => acc + curr,
+        0
+    );
 }
 
 export function getScores() {
