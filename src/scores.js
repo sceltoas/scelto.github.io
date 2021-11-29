@@ -14,6 +14,7 @@ const participants = [
             4,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -26,6 +27,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             4,
+            3,
         ],
     },
     {
@@ -38,6 +40,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -50,6 +53,7 @@ const participants = [
             3,
             PARTICIPATED,
             PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -62,6 +66,7 @@ const participants = [
             NOT_PARTICIPATED,
             PARTICIPATED,
             PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -74,6 +79,7 @@ const participants = [
             2,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -86,6 +92,7 @@ const participants = [
             3,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -98,6 +105,7 @@ const participants = [
             4,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -109,6 +117,7 @@ const participants = [
             PARTICIPATED,
             3,
             PARTICIPATED,
+            3,
             3,
         ],
     },
@@ -122,6 +131,7 @@ const participants = [
             2,
             PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -134,6 +144,7 @@ const participants = [
             1,
             PARTICIPATED,
             PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -146,6 +157,7 @@ const participants = [
             2,
             1,
             PARTICIPATED,
+            1
         ],
     },
     {
@@ -158,6 +170,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -170,6 +183,7 @@ const participants = [
             NOT_PARTICIPATED,
             1,
             1,
+            PARTICIPATED
         ],
     },
     {
@@ -182,6 +196,7 @@ const participants = [
             NOT_PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -194,6 +209,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -206,6 +222,7 @@ const participants = [
             4,
             1,
             NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -218,6 +235,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -230,6 +248,7 @@ const participants = [
             1,
             1,
             1,
+            4
         ],
     },
     {
@@ -242,6 +261,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -254,6 +274,7 @@ const participants = [
             PARTICIPATED,
             1,
             PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -266,6 +287,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -278,6 +300,7 @@ const participants = [
             3,
             PARTICIPATED,
             3,
+            PARTICIPATED
         ],
     },
     {
@@ -290,6 +313,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -302,6 +326,7 @@ const participants = [
             4,
             PARTICIPATED,
             PARTICIPATED,
+            2
         ],
     },
     {
@@ -314,6 +339,7 @@ const participants = [
             1,
             1,
             NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -326,6 +352,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             4,
+            PARTICIPATED
         ],
     },
     {
@@ -338,6 +365,7 @@ const participants = [
             2,
             PARTICIPATED,
             1,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -350,6 +378,7 @@ const participants = [
             NOT_PARTICIPATED,
             1,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -362,6 +391,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
 ];
@@ -400,6 +430,11 @@ export const rounds = [
     {
         head: 'Frisbeegolf (2021)',
         points: [400, 300, 200, 150],
+        participationScore: 100,
+    },
+    {
+        head: 'Duckpin (2021)',
+        points: [500, 400, 250, 150],
         participationScore: 100,
     },
 ];
