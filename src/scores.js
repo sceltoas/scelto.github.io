@@ -55,7 +55,7 @@ const participants = [
     {
         name: 'Fredrik B',
         results: [
-            NOT_PARTICIPATED
+            PARTICIPATED
         ],
     },
     {
