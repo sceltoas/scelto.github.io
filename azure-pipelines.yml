@@ -23,7 +23,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'Microsoft Partner Network(6a27fa3f-805b-4497-a55b-8cbd57b50016)'
+    azureSubscription: 'MPN Azure'
     appType: 'webApp'
     WebAppName: 'sceltoweb'
     ResourceGroupName: 'scelto-web-migrate'
