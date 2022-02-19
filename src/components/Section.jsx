@@ -66,7 +66,8 @@ Section.propTypes = {
     ingress: PropTypes.string,
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.element),
-        PropTypes.element
+        PropTypes.element,
+        PropTypes.node,
       ]),
     dark: PropTypes.bool,
     className: PropTypes.string,

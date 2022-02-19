@@ -64,7 +64,7 @@ const FullPageImageWithHeader = ({
 
 FullPageImageWithHeader.propTypes = {
     image: PropTypes.string,
-    title: PropTypes.string,
+    title: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
     subtitle: PropTypes.string,
     link: PropTypes.string,
     contactMeHref: PropTypes.string,

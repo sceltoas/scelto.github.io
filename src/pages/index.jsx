@@ -12,7 +12,7 @@ import Navigation from '../components/Navigation';
 import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
 import Footer from '../components/Footer';
-import { LightButton, DarkButton } from '../components/Button';
+import { LightButtonLink, DarkButtonLink } from '../components/Button';
 import { createMetadata } from '../utils';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 import { sortedAnsatte } from '../ansatte-med-assets';
@@ -74,7 +74,7 @@ const IndexPage = props => {
                                 />)}
                     </div>
                     <div className="sc-button-container">
-                        <DarkButton to="/ansatte" text="Se alle konsulentene" />
+                        <DarkButtonLink to="/ansatte" text="Se alle konsulentene" />
                     </div>
                 </Fragment>
             </Section>
@@ -102,7 +102,7 @@ const IndexPage = props => {
                         </Fade>
                     </div>
                     <div className="sc-button-container">
-                        <LightButton
+                        <LightButtonLink
                             to="/tjenester"
                             text="Les mer om våre tjenester"
                         />
