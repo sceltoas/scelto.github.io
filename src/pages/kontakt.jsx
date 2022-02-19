@@ -6,7 +6,7 @@ import Working from '../images/contact.jpg';
 import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
 import Footer from '../components/Footer';
-import styles from './kontakt.module.less';
+import * as styles from './kontakt.module.less';
 import DL from '../images/tor_eric_crop.jpg';
 import { LightButton } from '../components/Button';
 import Fade from 'react-reveal/Fade';
@@ -90,7 +90,7 @@ class IndexPage extends React.Component {
                                         className={styles.kvitteringImage}
                                         src={DL}
                                     />
-                                    <div className={styles.kvitteringWrapper}>
+                                    <div>
                                         <h4 className={styles.kvitteringText}>
                                             Jeg kontakter deg!
                                         </h4>

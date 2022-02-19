@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './SectionWithIcon.module.less';
+import * as styles from './SectionWithIcon.module.less';
 
 const SectionWithIcon = ({
     id,

@@ -1,5 +1,3 @@
-import _ from 'lodash';
-
 const PARTICIPATED = -1;
 const NOT_PARTICIPATED = -2;
 
@@ -194,50 +192,36 @@ export const rounds = [
     },
 ];
 
-function calcScore(participant) {
-    // participation = -1, non-participation = -2
-    let totalScore = 0;
-    let scores = [];
-    let scoreValues = [];
-    _.each(participant.results, function (result, i) {
-        let event = rounds[i];
-        let numberOfScoredPlaces = event.points.length;
-
-        if (result === PARTICIPATED || result > numberOfScoredPlaces) {
-            totalScore += event.participationScore;
-            scoreValues.push(event.participationScore);
-            scores.push('D (' + event.participationScore + ')');
-        } else if (result === NOT_PARTICIPATED) {
-            totalScore += 0;
-            scoreValues.push(0);
-            scores.push('F (0)');
-        } else {
-            totalScore += event.points[result - 1];
-            scoreValues.push(event.points[result - 1]);
-            scores.push(result + ' (' + event.points[result - 1] + ')');
-        }
+const getRoundScore = (result, index) => {
+    const round = rounds[index];
+    const numberOfScoredPlaces = round.points.length
+    if (result === PARTICIPATED || result > numberOfScoredPlaces) {
+        return ({
+            score: round.participationScore,
+            scoreText: 'D (' + round.participationScore + ')',
+        });
+    }
+    if (result === NOT_PARTICIPATED) {
+        return ({
+            score: 0,
+            scoreText: 'F (0)',
+        });
+    }
+    return ({
+        score: round.points[result - 1],
+        scoreText: result + ' (' + round.points[result - 1] + ')',
     });
-
-    participant.resultList = scores.join(', ');
-    participant.score = totalScore;
-    participant.scoreValues = scoreValues;
 }
 
-function calcCountingScore(participant) {
-    participant.countingScore = participant.scoreValues.reduce(
-        (acc, curr) => acc + curr,
-        0
-    );
+const getParticipantScores = ({name, results }) => {
+    const roundScores = results.map(getRoundScore);
+    const resultList = roundScores.map(x => x.scoreText).join(', ');
+    const totalScore = roundScores.reduce((acc, roundScore) => acc + roundScore.score, 0);
+    return {
+        name,
+        resultList,
+        totalScore
+    };
 }
 
-export function getScores() {
-    return _.chain(participants)
-        .each(calcScore)
-        .each(calcCountingScore)
-        .orderBy('countingScore', 'desc')
-        .value();
-}
-
-function compareNumbers(a, b) {
-    return a - b;
-}
+export const getScores = () => participants.map(getParticipantScores).sort((a, b) => b.totalScore - a.totalScore);

@@ -3,7 +3,7 @@ import Twitter from '../components/icons/Twitter';
 import LinkedIn from '../components/icons/LinkedIn';
 import Github from '../components/icons/Github';
 
-import styles from './EmployeeIntroWithImage.module.less';
+import * as styles from './EmployeeIntroWithImage.module.less';
 
 const EmployeeIntroWithImage = ({ employee, image }) => (
     <div className={styles.wrapper}>
