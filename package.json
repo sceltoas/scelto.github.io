@@ -12,7 +12,6 @@
     "gatsby-plugin-robots-txt": "^1.7.0",
     "gatsby-plugin-sitemap": "^5.7.0",
     "less": "^4.1.2",
-    "lodash": "^4.17.21",
     "postcss-browser-reporter": "^0.6.0",
     "postcss-import": "^14.0.2",
     "postcss-preset-env": "^7.4.1",
