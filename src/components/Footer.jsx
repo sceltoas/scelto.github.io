@@ -54,7 +54,7 @@ const Footer = () => (
             </div>
         </div>
         <div className={styles.copyrightAndCertifications}>
-            <div className={styles.copyright}>Scelto AS &copy; 2016</div>
+            <div className={styles.copyright}>Scelto AS &copy; {new Date().getFullYear()}</div>
             <div className="">
                 <a
                     href="https://www.miljofyrtarn.no/"

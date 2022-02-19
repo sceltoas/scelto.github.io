@@ -329,7 +329,7 @@
 			</div>
 			<div class="row">
 				<div class="col s12">
-					<p>Scelto AS &copy; 2016</p>
+					<p>Scelto AS &copy; <span id="current-year"></span></p>
 				</div>
 			</div>
 		</div>
@@ -352,6 +352,9 @@
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[ 0 ];
 		s.parentNode.insertBefore(ga, s);
+		
+		var currentYearSpan = document.getElementById('current-year');
+		currentYearSpan.innerHTML = new Date().getFullYear();
 	})();
 </script>
 
