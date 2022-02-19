@@ -8,12 +8,12 @@
     "gatsby": "^4.7.2",
     "gatsby-plugin-google-analytics": "^4.7.0",
     "gatsby-plugin-postcss": "^5.7.0",
+    "postcss-preset-env": "^7.4.1",
     "gatsby-plugin-react-helmet": "^5.7.0",
     "gatsby-plugin-robots-txt": "^1.7.0",
     "gatsby-plugin-sitemap": "^5.7.0",
     "less": "^4.1.2",
     "postcss-browser-reporter": "^0.6.0",
-    "postcss-cssnext": "^3.1.0",
     "postcss-import": "^14.0.2",
     "postcss-reporter": "^7.0.5",
     "proptypes": "^1.1.0",
@@ -44,7 +44,8 @@
     "lighthouse": "^9.4.0",
     "prettier": "^2.5.1",
     "react-helmet": "^6.1.0",
-    "react-parallax": "^3.3.0"
+    "react-parallax": "^3.3.0",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   },
   "resolutions": {
     "terser": "5.10.0"

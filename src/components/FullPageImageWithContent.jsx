@@ -16,7 +16,7 @@ const FullPageImageWithContent = ({ image, children }) => (
 );
 
 FullPageImageWithContent.propTypes = {
-    image: PropTypes.object,
+    image: PropTypes.string,
     children: PropTypes.element,
 };
 

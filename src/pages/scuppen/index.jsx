@@ -40,7 +40,7 @@ const IndexPage = () => (
                 </thead>
                 <tbody id="results-table">
                     {getScores().map((score, index) => (
-                        <tr class="scuppen-scores-entry">
+                        <tr className="scuppen-scores-entry" key={score.name}>
                             <td>{index + 1}</td>
                             <td>{score.name}</td>
                             <td className="scuppen-scores-entry__resultList">
@@ -52,7 +52,7 @@ const IndexPage = () => (
                 </tbody>
             </table>
             <p style={{ fontSize: '0.6em' }}>D=Deltatt, F=Feilet i å møte</p>
-            <p class="small">
+            <p className="small">
                 Resultat etter {rounds.length} runder med{' '}
                 {rounds.map(({ head }) => head).join(', ')}
             </p>
