@@ -22,7 +22,7 @@ const IndexPage = () => (
             link={[{ rel: 'icon', href: Favicon }]}
         />
         <Navigation />
-        <Section dark title="Scuppen 2020-2021" className="scuppen-scores">
+        <Section dark title="Scuppen 2022" className="scuppen-scores">
             <table
                 cellPadding="0"
                 cellSpacing="0"
@@ -35,26 +35,24 @@ const IndexPage = () => (
                         <th className="scuppen-scores-entry__resultList">
                             Resultater
                         </th>
-                        <th>Tellende poengsum</th>
                         <th>Total poengsum</th>
                     </tr>
                 </thead>
                 <tbody id="results-table">
                     {getScores().map((score, index) => (
-                        <tr class="scuppen-scores-entry">
+                        <tr className="scuppen-scores-entry" key={score.name}>
                             <td>{index + 1}</td>
                             <td>{score.name}</td>
                             <td className="scuppen-scores-entry__resultList">
                                 {score.resultList}
                             </td>
-                            <td>{score.countingScore}</td>
-                            <td style={{ opacity: '.5' }}>{score.score}</td>
+                            <td style={{ textAlign: 'right' }}>{score.totalScore}</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
             <p style={{ fontSize: '0.6em' }}>D=Deltatt, F=Feilet i å møte</p>
-            <p class="small">
+            <p className="small">
                 Resultat etter {rounds.length} runder med{' '}
                 {rounds.map(({ head }) => head).join(', ')}
             </p>

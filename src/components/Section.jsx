@@ -64,7 +64,11 @@ Section.propTypes = {
     id: PropTypes.string,
     title: PropTypes.string,
     ingress: PropTypes.string,
-    children: PropTypes.element,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.element),
+        PropTypes.element,
+        PropTypes.node,
+      ]),
     dark: PropTypes.bool,
     className: PropTypes.string,
 };

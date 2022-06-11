@@ -1,7 +1,7 @@
 import React from 'react';
 import LinkedIn from '../images/icons/Scelto–icon-linkedin-footer.svg';
 import Twitter from '../images/icons/Scelto–icon-twitter-footer.svg';
-import styles from './Footer.module.less';
+import * as styles from './Footer.module.less';
 import miljofyrtarn from '../images/Miljfyrtarn-ensfarget-hvit.png';
 
 const Footer = () => (
@@ -54,7 +54,7 @@ const Footer = () => (
             </div>
         </div>
         <div className={styles.copyrightAndCertifications}>
-            <div className={styles.copyright}>Scelto AS &copy; 2016</div>
+            <div className={styles.copyright}>Scelto AS &copy; {new Date().getFullYear()}</div>
             <div className="">
                 <a
                     href="https://www.miljofyrtarn.no/"

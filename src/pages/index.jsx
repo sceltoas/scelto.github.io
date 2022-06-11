@@ -12,7 +12,7 @@ import Navigation from '../components/Navigation';
 import Helmet from 'react-helmet';
 import Favicon from '../images/favicon.png';
 import Footer from '../components/Footer';
-import { LightButton, DarkButton } from '../components/Button';
+import { LightButtonLink, DarkButtonLink } from '../components/Button';
 import { createMetadata } from '../utils';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 import { sortedAnsatte } from '../ansatte-med-assets';
@@ -21,6 +21,11 @@ import '../layouts/scelto.less';
 import './index.less';
 
 const IndexPage = props => {
+    const images = props.data.EmployeeImages.edges.reduce((acc, curr) => ({
+        ...acc,
+        [curr.node.name]: curr.node.childImageSharp.fixed
+    }), {})
+
     return (
         <Fragment>
             <Helmet
@@ -59,27 +64,17 @@ const IndexPage = props => {
                             justifyContent: 'center',
                         }}
                     >
-                        {sortedAnsatte.map(({ name, title, key }) => {
-                            const image = props.data.EmployeeImages.edges.find(
-                                node => node.node.name === key
-                            );
-                            return (
+                        {sortedAnsatte.map(({ name, title, key }) => 
                                 <EmployeeImageLink
                                     key={key}
-                                    image={
-                                        (image &&
-                                            image.node.childImageSharp.fixed) ||
-                                        DefaultEmployeeImage
-                                    }
+                                    image={images[key] || DefaultEmployeeImage}
                                     name={name}
                                     title={title}
                                     to={`/ansatte/${key}`}
-                                />
-                            );
-                        })}
+                                />)}
                     </div>
                     <div className="sc-button-container">
-                        <DarkButton to="/ansatte" text="Se alle konsulentene" />
+                        <DarkButtonLink to="/ansatte" text="Se alle konsulentene" />
                     </div>
                 </Fragment>
             </Section>
@@ -107,7 +102,7 @@ const IndexPage = props => {
                         </Fade>
                     </div>
                     <div className="sc-button-container">
-                        <LightButton
+                        <LightButtonLink
                             to="/tjenester"
                             text="Les mer om våre tjenester"
                         />
