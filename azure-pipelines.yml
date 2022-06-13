@@ -12,19 +12,24 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '16.14.2'
   displayName: 'Install Node.js'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+- task: Npm@1
+  displayName: 'NPM CI'
+  inputs:
+    command: 'ci'
+    
+- task: Npm@1
+  displayName: 'NPM Publish'
+  inputs:
+    command: 'publish'
 
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
     azureSubscription: 'MPN Azure'
     appType: 'webApp'
-    WebAppName: 'sceltoweb'
+    WebAppName: 'staging'
     ResourceGroupName: 'scelto-web-migrate'
     packageForLinux: '$(System.DefaultWorkingDirectory)/public'
