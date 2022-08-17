@@ -339,12 +339,12 @@ var ansatte = {
         ingress:
             'Ken er en selvdreven, kvalitetsbevisst og disiplinert full-stack utvikler med over ti års erfaring innen systemutvikling. Han jobber med utvikling, design og arkitektur, og har en nese for gode brukeropplevelser.',
         keyFeatures: [
-            'Java',
-            'Javascript',
-            'Ruby',
-            'Systemutvikling',
+            'Kotlin',
+            'GraphQL',
+            'Kafka',
+            'CQRS & Event Sourcing',
+            'React',
             'DevOps',
-            'Teknisk arkitekt',
         ],
         email: 'ken@scelto.no',
         linkedIn: 'kengullaksen',
