@@ -337,7 +337,7 @@ var ansatte = {
         endOfContract: '2020-12-31',
         firstName: 'Ken',
         ingress:
-            'Ken er en selvdreven, kvalitetsbevisst og disiplinert full-stack utvikler med over ti års erfaring innen systemutvikling. Han jobber med utvikling, design og arkitektur, og har en nese for gode brukeropplevelser.',
+            'Ken er en selvdreven, kvalitetsbevisst og disiplinert full-stack utvikler med over femten års erfaring innen systemutvikling. Han jobber med utvikling, design og arkitektur, og har en nese for gode brukeropplevelser.',
         keyFeatures: [
             'Kotlin',
             'GraphQL',
