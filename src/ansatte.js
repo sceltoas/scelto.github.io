@@ -405,9 +405,9 @@ var ansatte = {
         firstName: 'Terje',
         ingress:
             'Terje har stor interesse for moderne teknologi, design og gode brukeropplevelser. Han han har jobbet med utvikling av web og applikasjoner for mobil siden 2012.',
-        keyFeatures: ['iOS', 'Android', 'Web frontend'],
+        keyFeatures: ['iOS', 'Swift', 'SwiftUI', 'Android', 'Kotlin'],
         email: 'terje@scelto.no',
-        linkedIn: 'https://www.linkedin.com/in/terje-l%C3%B8n%C3%B8y-a8543165/',
+        linkedIn: '',
         twitter: 'terjelonoy',
         github: 'TerjeLon',
         mainSection: [
