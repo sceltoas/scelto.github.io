@@ -123,7 +123,7 @@ var ansatte = {
             'Han brenner for smidig utvikling, men innser at det ikke er noen holy-grail som løser alle utfordringene et utviklingsprosjekt møter. Etter over 10 år i bransjen og en rekke prosjekter har han tilegnet seg en bred kompetanse over en rekke områder, med vekt på energi bransjen hvor han har jobbet med både måleverdi-, drifts-støttesystemer og nå sist den nasjonale datahuben for energibransjen, Elhub. I forbindelse med disse prosjektene har han også opparbeidet seg mye kompetanse på migrering, og kompleksiteten forbundet med dette.',
         ],
     },
-    oleandre: {
+    /*oleandre: {
         name: 'Ole-André Riga-Johansen',
         firstName: 'Ole André',
         title: 'Seniorkonsulent',
@@ -146,7 +146,7 @@ var ansatte = {
         mainSection: [
             'Som teknolog er Ole-André opptatt av grenselandet mellom teknologi og forretningsverdi. Han er en engasjert, entusiastisk og motivert person som er et positivt tilskudd til ethvert team. På fritiden er Ole-André fotballsupporter, reiseentusiast og aksjespekulant.',
         ],
-    },
+    },*/
     gustav: {
         name: 'Gustav Bilben',
         title: 'Seniorkonsulent',
