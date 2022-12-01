@@ -10,6 +10,7 @@ const participants = [
             1,
             PARTICIPATED,
             1,
+            PARTICIPATED,
             PARTICIPATED
         ],
     },
@@ -18,6 +19,7 @@ const participants = [
         results: [
             NOT_PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED
         ],
@@ -28,7 +30,8 @@ const participants = [
             NOT_PARTICIPATED,
             PARTICIPATED,
             2,
-            PARTICIPATED
+            PARTICIPATED,
+            2
         ],
     },
     {
@@ -37,12 +40,14 @@ const participants = [
             PARTICIPATED,
             NOT_PARTICIPATED,
             3,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED
         ],
     },
     {
         name: 'Endre',
         results: [
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
@@ -55,7 +60,8 @@ const participants = [
             PARTICIPATED,
             NOT_PARTICIPATED,
             1,
-            PARTICIPATED
+            PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -64,7 +70,8 @@ const participants = [
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
-            PARTICIPATED
+            PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -73,6 +80,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             3,
+            PARTICIPATED,
             PARTICIPATED
         ],
     },
@@ -82,7 +90,8 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
-            NOT_PARTICIPATED
+            NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -90,6 +99,7 @@ const participants = [
         results: [
             PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED
         ],
@@ -100,6 +110,7 @@ const participants = [
             PARTICIPATED,
             1,
             NOT_PARTICIPATED,
+            PARTICIPATED,
             PARTICIPATED
         ],
     },
@@ -109,7 +120,8 @@ const participants = [
             NOT_PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
-            NOT_PARTICIPATED
+            NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -118,7 +130,8 @@ const participants = [
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
-            PARTICIPATED
+            PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -127,7 +140,8 @@ const participants = [
             2,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
-            PARTICIPATED
+            PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -136,7 +150,8 @@ const participants = [
             3,
             PARTICIPATED,
             NOT_PARTICIPATED,
-            PARTICIPATED
+            PARTICIPATED,
+            3
         ],
     },
     {
@@ -145,7 +160,8 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             1,
-            1
+            1,
+            3
         ],
     },
     {
@@ -154,7 +170,8 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             2,
-            2
+            2,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -163,7 +180,8 @@ const participants = [
             NOT_PARTICIPATED,
             3,
             3,
-            PARTICIPATED
+            PARTICIPATED,
+            1
         ],
     },
     {
@@ -171,6 +189,7 @@ const participants = [
         results: [
             NOT_PARTICIPATED,
             PARTICIPATED,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED
         ],
@@ -181,6 +200,7 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED
         ],
     },
@@ -190,7 +210,18 @@ const participants = [
             PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED
+        ],
+    },
+    {
+        name: 'Kent',
+        results: [
+            NOT_PARTICIPATED,
+            NOT_PARTICIPATED,
+            NOT_PARTICIPATED,
+            NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -199,6 +230,7 @@ const participants = [
             NOT_PARTICIPATED,
             PARTICIPATED,
             1,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED
         ],
     },
@@ -208,13 +240,15 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
-            NOT_PARTICIPATED
+            NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
         name: 'Ole-André',
         results: [
             PARTICIPATED,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED
@@ -226,7 +260,8 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
-            2
+            2,
+            1
         ],
     },
     {
@@ -235,7 +270,8 @@ const participants = [
             NOT_PARTICIPATED,
             2,
             NOT_PARTICIPATED,
-            NOT_PARTICIPATED
+            NOT_PARTICIPATED,
+            PARTICIPATED
         ],
     },
     {
@@ -244,6 +280,7 @@ const participants = [
             NOT_PARTICIPATED,
             4,
             NOT_PARTICIPATED,
+            PARTICIPATED,
             PARTICIPATED
         ],
     },
@@ -253,7 +290,8 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
-            PARTICIPATED
+            PARTICIPATED,
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -262,12 +300,14 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             NOT_PARTICIPATED,
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED
         ],
     },
     {
         name: 'Tor Atle',
         results: [
+            NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
             NOT_PARTICIPATED,
@@ -280,7 +320,8 @@ const participants = [
             PARTICIPATED,
             PARTICIPATED,
             2,
-            PARTICIPATED
+            PARTICIPATED,
+            4
         ],
     },
     {
@@ -289,7 +330,8 @@ const participants = [
             4,
             PARTICIPATED,
             NOT_PARTICIPATED,
-            2
+            2,
+            4
         ],
     },
 ];
@@ -313,6 +355,11 @@ export const rounds = [
     {
         head: 'Minigolf (2022)',
         points: [500, 400, 300, 200],
+        participationScore: 100,
+    },
+    {
+        head: 'Shuffleboard (2022)',
+        points: [400, 300, 200, 100],
         participationScore: 100,
     },
 ];
