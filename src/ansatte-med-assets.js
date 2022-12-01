@@ -3,7 +3,6 @@ import OleTommy from './images/mugshots/oletommy.jpg';
 import Herman from './images/mugshots/herman.jpg';
 import Haaken from './images/mugshots/haaken.jpg';
 import Marius from './images/mugshots/marius.jpg';
-import OleAndre from './images/mugshots/oleandre.jpg';
 import Gustav from './images/mugshots/gustav.jpg';
 import Erlend from './images/mugshots/erlend.jpg';
 import Richard from './images/mugshots/richard.jpg';
@@ -34,7 +33,6 @@ import OleTommyCV from './cvs/Ole_Tommy_Lid-Strand.pdf';
 import HermanCV from './cvs/Herman_Crawfurd_Svensen.pdf';
 import HaakenCV from './cvs/Håken_Stark.pdf';
 import MariusCV from './cvs/Marius_Aune_Gravdal.pdf';
-import OleAndreCV from './cvs/Ole-Andrè_Riga-Johansen.pdf';
 import GustavCV from './cvs/Gustav_Andrè_Bilben.pdf';
 import ErlendCV from './cvs/Erlend_Nilsen.pdf';
 import RichardCV from './cvs/Richard_Rennemo.pdf';
@@ -110,12 +108,6 @@ export const ansatteMedAssets = {
         image: Marius,
         linkToCV: MariusCV,
         customImage: Nerd,
-    },
-    oleandre: {
-        ...ansatte.oleandre,
-        image: OleAndre,
-        linkToCV: OleAndreCV,
-        customImage: Drinker,
     },
     gustav: {
         ...ansatte.gustav,
