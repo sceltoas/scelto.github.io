@@ -287,7 +287,7 @@ const participants = [
             NOT_PARTICIPATED,
             2,
             1,
-            PARTICIPATED
+            3
         ],
     },
     {
