@@ -48,7 +48,7 @@ import TerjeCV from './cvs/Terje_Lonoy.pdf';
 import LarsOlavCV from './cvs/Lars_Olav_Torvik.pdf';
 import AnnKatrinCV from './cvs/Ann-Katrin_Gagnat.pdf';
 import JoergenCV from './cvs/Joergen_Ringen.pdf';
-import AndreasCV from './cvs/Andreas_Nilsen.pdf';
+import AndreasCV from './cvs/Andreas_Sagen_Aspaas.pdf';
 import HallvardCV from './cvs/Hallvard_Andreas_Stark.pdf';
 import IsmarCV from './cvs/Ismar_Slomic.pdf';
 import HaakonCV from './cvs/Håkon_Hobæk.pdf';

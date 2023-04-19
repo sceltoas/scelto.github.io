@@ -468,7 +468,7 @@ var ansatte = {
         ],
     },
     andreas: {
-        name: 'Andreas Nilsen',
+        name: 'Andreas Sagen Aspaas',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Andreas',
@@ -476,7 +476,7 @@ var ansatte = {
             'Andreas er en seniorkonsulent med erfaring fra 2011. Han har i sin karriere jobbet med mange forskjellige teknologier innenfor forskjellige sektorer og domener som blant annet forsvar, elmarked, bank og finans, landbruk, helse, jordbruk, Statens Vegvesen og NAV.',
         keyFeatures: ['Systemutvikler Java'],
         email: 'andreas@scelto.no',
-        linkedIn: 'andreas-nilsen-54bba941',
+        linkedIn: 'andreas-sagen-aspaas-54bba941',
         twitter: '',
         github: '',
         mainSection: [
