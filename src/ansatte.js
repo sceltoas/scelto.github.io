@@ -250,8 +250,8 @@ var ansatte = {
             'Java',
         ],
         email: 'ivar@scelto.no',
-        linkedIn: 'ivarni',
-        twitter: 'ivarni',
+        linkedIn: 'ivar-nilsen-7b0999260',
+        twitter: '',
         github: 'ivarni',
         mainSection: [
             'Han de senere årene fokusert på å bygge kompetanse på webløsninger og Javascript-teknologier og jobber ofte med å prøve ut nye teknologier.',
