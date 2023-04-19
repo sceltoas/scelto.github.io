@@ -26,7 +26,9 @@ import Bard from './images/mugshots/baard.jpg';
 import Ismar from './images/mugshots/ismar.jpg';
 import Eirik from './images/mugshots/eirik.jpg';
 import ErikE from './images/mugshots/erike.jpg';
-// import NoPicYet from './images/mugshots/no-pic-yet.jpg';
+import TorAtle from './images/mugshots/toratle.jpg';
+import Endre from './images/mugshots/endre.jpg';
+import KjellOlav from './images/mugshots/kjellolav.jpg';
 
 import TorEricCV from './cvs/Tor_Eric_Sandvik.pdf';
 import OleTommyCV from './cvs/Ole_Tommy_Lid-Strand.pdf';
@@ -55,8 +57,10 @@ import HaakonCV from './cvs/Håkon_Hobæk.pdf';
 import FrederikCV from './cvs/Frederik_Skytte.pdf';
 import EirikCV from './cvs/Eirik_Bergande.pdf';
 import ErikeCV from './cvs/Erik_Eiesland.pdf';
+import TorAtleCV from './cvs/Tor_Atle_Lunde.pdf';
+import EndreCV from './cvs/Endre_Ron_Arntsen.pdf';
+import KjellOlavCV from './cvs/Kjell_Olav_Dale.pdf';
 
-import Drinker from './images/drinker.jpeg';
 import Skateboard from './images/skateboard.jpg';
 import IvarBackground from './images/ivar_background.jpg';
 import HermanBackground from './images/herms-background.jpg';
@@ -245,6 +249,24 @@ export const ansatteMedAssets = {
         ...ansatte.erike,
         image: ErikE,
         linkToCV: ErikeCV,
+        customImage: Yoga,
+    },
+    toratle: {
+        ...ansatte.toratle,
+        image: TorAtle,
+        linkToCv: TorAtleCV,
+        customImage: Yoga,
+    },
+    endre: {
+        ...ansatte.endre,
+        image: Endre,
+        linkToCv: EndreCV,
+        customImage: Yoga,
+    },
+    kjellolav: {
+        ...ansatte.kjellolav,
+        image: KjellOlav,
+        linkToCV: KjellOlavCV,
         customImage: Yoga,
     },
 };
