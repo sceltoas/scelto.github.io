@@ -29,6 +29,7 @@ import ErikE from './images/mugshots/erike.jpg';
 import TorAtle from './images/mugshots/toratle.jpg';
 import Endre from './images/mugshots/endre.jpg';
 import KjellOlav from './images/mugshots/kjellolav.jpg';
+import Ida from './images/mugshots/ida.jpg';
 
 import TorEricCV from './cvs/Tor_Eric_Sandvik.pdf';
 import OleTommyCV from './cvs/Ole_Tommy_Lid-Strand.pdf';
@@ -60,6 +61,7 @@ import ErikeCV from './cvs/Erik_Eiesland.pdf';
 import TorAtleCV from './cvs/Tor_Atle_Lunde.pdf';
 import EndreCV from './cvs/Endre_Ron_Arntsen.pdf';
 import KjellOlavCV from './cvs/Kjell_Olav_Dale.pdf';
+import IdaCV from './cvs/Ida_Hveding_Huse.pdf';
 
 import Skateboard from './images/skateboard.jpg';
 import IvarBackground from './images/ivar_background.jpg';
@@ -268,6 +270,12 @@ export const ansatteMedAssets = {
         image: KjellOlav,
         linkToCV: KjellOlavCV,
         customImage: Yoga,
+    },
+    ida: {
+        ...ansatte.ida,
+        image: Ida,
+        linkToCv: IdaCV,
+        customImage: Cards,
     },
 };
 
