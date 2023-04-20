@@ -21,7 +21,7 @@
     "react-countup": "^4.0.0",
     "react-dom": "^16.7.0",
     "react-reveal": "^1.2.2",
-    "terser": "3.14.1"
+    "terser": "4.8.1"
   },
   "keywords": [
     "gatsby"
@@ -47,6 +47,6 @@
     "react-parallax": "^2.1.0"
   },
   "resolutions": {
-    "terser": "3.14.1"
+    "terser": "4.8.1"
   }
 }

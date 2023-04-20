@@ -7,13 +7,13 @@ const participants = [
     {
         name: 'Andreas',
         results: [
-            1
+            NOT_PARTICIPATED
         ],
     },
     {
         name: 'Ann Katrin',
         results: [
-            NOT_PARTICIPATED
+            PARTICIPATED
         ],
     },
     {
@@ -23,15 +23,21 @@ const participants = [
         ],
     },
     {
-        name: 'Eirik B',
+        name: 'Eirik',
         results: [
-            PARTICIPATED
+            NOT_PARTICIPATED
+        ],
+    },
+    {
+        name: 'Endre',
+        results: [
+            NOT_PARTICIPATED
         ],
     },
     {
         name: 'Erik E',
         results: [
-            PARTICIPATED
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -43,7 +49,7 @@ const participants = [
     {
         name: 'Erlend',
         results: [
-            PARTICIPATED
+            2
         ],
     },
     {
@@ -55,13 +61,13 @@ const participants = [
     {
         name: 'Fredrik B',
         results: [
-            NOT_PARTICIPATED
+            PARTICIPATED
         ],
     },
     {
         name: 'Fredrik S',
         results: [
-            PARTICIPATED
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -79,19 +85,19 @@ const participants = [
     {
         name: 'Herman',
         results: [
-            2
+            NOT_PARTICIPATED
         ],
     },
     {
         name: 'Håken',
         results: [
-            3
+            1
         ],
     },
     {
         name: 'Håkon',
         results: [
-            PARTICIPATED
+            3
         ],
     },
     {
@@ -109,19 +115,25 @@ const participants = [
     {
         name: 'Jan Erik',
         results: [
-            NOT_PARTICIPATED
+            PARTICIPATED
         ],
     },
     {
         name: 'Jørgen',
         results: [
-            PARTICIPATED
+            NOT_PARTICIPATED
         ],
     },
     {
         name: 'Ken',
         results: [
-            PARTICIPATED
+            NOT_PARTICIPATED
+        ],
+    },
+    {
+        name: 'Kent',
+        results: [
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -133,13 +145,7 @@ const participants = [
     {
         name: 'Marius',
         results: [
-            PARTICIPATED
-        ],
-    },
-    {
-        name: 'Ole-André',
-        results: [
-            PARTICIPATED
+            NOT_PARTICIPATED
         ],
     },
     {
@@ -149,46 +155,58 @@ const participants = [
         ],
     },
     {
+        name: 'Peter',
+        results: [
+            1
+        ],
+    },
+    {
         name: 'Richard',
         results: [
-            NOT_PARTICIPATED
+            3
         ],
     },
     {
         name: 'Seán',
         results: [
-            NOT_PARTICIPATED
+            PARTICIPATED
         ],
     },
     {
         name: 'Terje',
         results: [
-            PARTICIPATED
+            4
         ],
     },
     {
         name: 'Tom Erik',
         results: [
-            PARTICIPATED
+            NOT_PARTICIPATED
+        ],
+    },
+    {
+        name: 'Tor Atle',
+        results: [
+            NOT_PARTICIPATED
         ],
     },
     {
         name: 'Tor Eric',
         results: [
-            PARTICIPATED
+            NOT_PARTICIPATED
         ],
     },
     {
         name: 'Vetle',
         results: [
-            4
+            2
         ],
     },
 ];
 
 export const rounds = [
     {
-        head: 'Racing (2022)',
+        head: 'Street curling (Januar)',
         points: [500, 400, 300, 200],
         participationScore: 100,
     },

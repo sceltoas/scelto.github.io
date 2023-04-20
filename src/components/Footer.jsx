@@ -40,8 +40,8 @@ const Footer = () => (
         <div className={styles.addressAndOtherInfo}>
             <div className={styles.addressAndOtherInfoAddress}>
                 <div>Scelto AS</div>
-                <div>Karl Johans gate 16</div>
-                <div>0154 Oslo</div>
+                <div>Universitetsgata 2</div>
+                <div>0164 Oslo</div>
             </div>
             <div className="">
                 <div>Org.nr.: 914 757 274 MVA</div>

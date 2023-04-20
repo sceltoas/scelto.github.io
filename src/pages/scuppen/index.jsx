@@ -22,7 +22,7 @@ const IndexPage = () => (
             link={[{ rel: 'icon', href: Favicon }]}
         />
         <Navigation />
-        <Section dark title="Scuppen 2020-2021" className="scuppen-scores">
+        <Section dark title="Scuppen 2023" className="scuppen-scores">
             <table
                 cellPadding="0"
                 cellSpacing="0"
