@@ -250,8 +250,8 @@ var ansatte = {
             'Java',
         ],
         email: 'ivar@scelto.no',
-        linkedIn: 'ivarni',
-        twitter: 'ivarni',
+        linkedIn: 'ivar-nilsen-7b0999260',
+        twitter: '',
         github: 'ivarni',
         mainSection: [
             'Han de senere årene fokusert på å bygge kompetanse på webløsninger og Javascript-teknologier og jobber ofte med å prøve ut nye teknologier.',
@@ -468,7 +468,7 @@ var ansatte = {
         ],
     },
     andreas: {
-        name: 'Andreas Nilsen',
+        name: 'Andreas Sagen Aspaas',
         title: 'Seniorkonsulent',
         endOfContract: '2019-12-31',
         firstName: 'Andreas',
@@ -476,7 +476,7 @@ var ansatte = {
             'Andreas er en seniorkonsulent med erfaring fra 2011. Han har i sin karriere jobbet med mange forskjellige teknologier innenfor forskjellige sektorer og domener som blant annet forsvar, elmarked, bank og finans, landbruk, helse, jordbruk, Statens Vegvesen og NAV.',
         keyFeatures: ['Systemutvikler Java'],
         email: 'andreas@scelto.no',
-        linkedIn: 'andreas-nilsen-54bba941',
+        linkedIn: 'andreas-sagen-aspaas-54bba941',
         twitter: '',
         github: '',
         mainSection: [
@@ -617,6 +617,72 @@ var ansatte = {
         mainSection: [
             'Erik elsker programmeringsspråk og bruker ofte fritiden sin til å sette seg inn i nye språk. Han synes dette gir gode innblikk i andre måter og tenke på som kan brukes i det daglige arbeidet med Java eller TypeScript. Erik er svært opptatt av å bruke all mulig tid til å gi verdi til kundene han jobber for gjennom automatisering av flest mulig oppgaver. På denne måten kan han fokusere på å levere forretningsverdi til kunden.',
             'På fritiden er Erik glad i å sykle, game og trene på treningssenter. Han er også blitt rimelig interiørinteressert etter å ha kjøpt seg ny leilighet.',
+        ],
+    },
+    toratle: {
+        name: 'Tor Atle Lunde',
+        title: 'Seniorkonsulent',
+        endOfContract: '2019-12-31',
+        firstName: 'Tor Atle',
+        ingress:
+            'Tor Atle er en systemutvikler og arkitekt med over 20 års erfaring fra justis-, finans- og luftfartsbransjen. Han har en Cand Mag innen automatisering og IT fra Høgskolen i Østfold. Trives godt både frontend og backend, og har lang erfaring med virksomhetskritiske systemer og tjenester.',
+        keyFeatures: [
+            'Systemutvikler Java',
+            'Fullstack-utvikler',
+            'Teknisk arkitekt',
+            'Skyteknologi',
+        ],
+        email: 'tor.atle.lunde@scelto.no',
+        linkedIn: '',
+        twitter: '',
+        github: '',
+        mainSection: [
+            'Tor Atle er en omgjengelig og trivelig person som vil berike ethvert team han kommer inn i. Han er faglig engasjert, har stor arbeidskapasitet og trives godt med mye ansvar. På fritiden driver Tor Atle med stisykling, golf og alpint og er glad i å gå på musikkfestivaler.',
+        ],
+    },
+    endre: {
+        name: 'Endre Røn Arntsen',
+        title: 'Seniorkonsulent',
+        endOfContract: '2019-12-31',
+        firstName: 'Endre',
+        ingress:
+            'Endre har jobbet som frontend-utvikler på web siden 2013. I sine ni år i bransjen har han vært med å på å utvikle flere titalls forskjellige webløsninger, alt fra store saksbehandlingssystemer til mindre web-baserte mobilapplikasjoner. Siden 2018 har han hatt en rolle som Tech Lead i Giant Leap Technologies, hvor han har hatt hovedansvaret for alt på frontend web. Han har vært involvert i ansettelsesprosesser, teknologivalg, samt vedlikehold, planlegging og gjennomføring av en rekke prosjekter.',
+        keyFeatures: [
+            'Frontend-utvikler',
+            'Angular og AngularJS',
+            'Node og React',
+            'JavaScript/TypeScript',
+        ],
+        email: 'endre.ron.arntsen@scelto.no',
+        linkedIn: '',
+        twitter: '',
+        github: '',
+        mainSection: [
+            'Endre er strukturert, kreativ, og omgjengelig. Han jobber godt både selvstendig og i team. Han er opptatt av å bevare en god dialog og et godt samhold innad i teamet, noe som ofte gjenspeiler seg i sluttresultatet.',
+            'På fritiden går mye av tiden med på spillutvikling, og for øyeblikket jobber han blant annet med å utvikle en løsning i React for å kunne tegne opp, konfigurere, og organisere brett til 2D-plattformspill.',
+        ],
+    },
+    kjellolav: {
+        name: 'Kjell Olav Dale',
+        title: 'Seniorkonsulent',
+        endOfContract: '2019-12-31',
+        firstName: 'Kjell Olav',
+        ingress:
+            'Kjell Olav har erfaring som utvikler og teknisk arkitekt siden 2017 og har sitt hovedfokus på Java, Spring og mikrotjenester. Han er en engasjert utvikler med høy arbeidskapasitet som er opptatt av å levere med høy kvalitet på kode og funksjonalitet. Han er vant til å jobbe som del av både store og små team, men har også vist at han kan levere ende til ende funksjonalitet selvstendig.',
+        keyFeatures: [
+            'Systemutvikler Java',
+            'Backend utvikler',
+            'Teknisk arkitekt',
+            'Skyteknologi',
+            'Sikkerhetsarkitekt',
+            'Techlead',
+        ],
+        email: 'kjell.olav.dale@scelto.no',
+        linkedIn: '',
+        twitter: '',
+        github: '',
+        mainSection: [
+            'På fritiden er Kjell Olav en sosial person som er interessert i god mat og drikke, smarthjem-teknologi, pc-hardware, golf om sommeren og snowboard på vinteren',
         ],
     },
 };
