@@ -15,15 +15,10 @@ steps:
     versionSpec: '16.6.0'
   displayName: 'Install Node.js'
 
-- task: Npm@1
-  displayName: 'NPM CI'
-  inputs:
-    command: 'ci'
-    
-- task: Npm@1
-  displayName: 'NPM Publish'
-  inputs:
-    command: 'publish'
+- script: |
+    npm ci
+    npm run build
+  displayName: 'npm install and build'
 
 - task: AzureRmWebAppDeployment@4
   inputs:
