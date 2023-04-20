@@ -25,6 +25,6 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'MPN Azure'
     appType: 'webApp'
-    WebAppName: 'staging'
+    WebAppName: 'sceltoweb'
     ResourceGroupName: 'scelto-web-migrate'
     packageForLinux: '$(System.DefaultWorkingDirectory)/public'
