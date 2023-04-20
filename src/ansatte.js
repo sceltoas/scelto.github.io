@@ -685,6 +685,29 @@ var ansatte = {
             'På fritiden er Kjell Olav en sosial person som er interessert i god mat og drikke, smarthjem-teknologi, pc-hardware, golf om sommeren og snowboard på vinteren',
         ],
     },
+    ida: {
+        name: 'Ida Hveding Huse',
+        title: 'Chief Operation Officer',
+        endOfContract: null,
+        showOnFirstPage: false,
+        isConsultant: false,
+        firstName: 'Ida',
+        ingress:
+            'Ida er utdannet siving data fra NTNU og har over 15 års erfaring i IT-bransjen. Hun har bred erfaring som blant annet utvikler, Scrum Master, teamleder, utviklingsleder og seksjonsleder.',
+        keyFeatures: [
+            'Teamleder',
+            'Scrum Master utvikling',
+            'Utviklingsleder',
+            'Seksjonsleder',
+        ],
+        email: 'ida@scelto.no',
+        linkedIn: 'linkedin.com/in/ida-hveding-huse-22799541',
+        mainSection: [
+            'Ida har lang erfaring i IT-bransjen, både som utvikler og ulike lederroller. De 7 siste årene har Ida jobbet i Fremtind Forsikring og hatt ansvaret for en seksjon med over 70 medarbeidere, både teamledere, tekniske arkitekter og utviklere. I Fremtind har Ida hatt system- og leveranseansvar, i tillegg til personalansvar.',
+            'Som person er Ida en blid og utadvendt person som har lett for å komme i kontakt med andre mennesker. Hun bidrar med pågangsmot og en sterk gjennomføringsevne, samt stor arbeidskapasitet og ansvarsbevissthet.',
+            'Teamleder med agile metoder som Scrum og Kanban. Leder med system- og leveranseansvar. Personalledelse.',
+        ],
+    },
 };
 
 module.exports = ansatte;
