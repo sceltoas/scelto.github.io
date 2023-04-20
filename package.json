@@ -1,52 +1,53 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "countup.js": "^1.9.3",
-    "gatsby": "^2.0.111",
-    "gatsby-plugin-google-analytics": "^2.1.35",
-    "gatsby-plugin-postcss": "^2.0.5",
-    "gatsby-plugin-react-helmet": "^3.0.6",
-    "gatsby-plugin-robots-txt": "^1.5.0",
-    "gatsby-plugin-sitemap": "^2.2.27",
-    "less": "^3.9.0",
-    "postcss-browser-reporter": "^0.5.0",
-    "postcss-cssnext": "^3.1.0",
-    "postcss-import": "^12.0.1",
-    "postcss-reporter": "^6.0.1",
-    "proptypes": "^1.1.0",
-    "react": "^16.7.0",
-    "react-countup": "^4.0.0",
-    "react-dom": "^16.7.0",
-    "react-reveal": "^1.2.2",
-    "terser": "4.8.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "build": "npm run format && gatsby build && npm run test",
-    "start": "gatsby develop -H 0.0.0.0",
-    "start:prod": "gatsby build && gatsby serve -o -H 0.0.0.0",
-    "format": "prettier  --write \"src/**/*.{js,jsx,less}\"",
-    "test": "node src/__tests__/test.js"
-  },
-  "devDependencies": {
-    "gatsby-image": "^2.2.34",
-    "gatsby-plugin-less": "^2.0.11",
-    "gatsby-plugin-sharp": "^2.0.22",
-    "gatsby-source-filesystem": "^2.0.22",
-    "gatsby-transformer-sharp": "^2.1.14",
-    "lighthouse": "^4.1.0",
-    "prettier": "^1.16.3",
-    "react-helmet": "^5.2.0",
-    "react-parallax": "^2.1.0"
-  },
-  "resolutions": {
-    "terser": "4.8.1"
-  }
+    "name": "gatsby-starter-default",
+    "description": "Gatsby default starter",
+    "version": "1.0.0",
+    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+    "dependencies": {
+        "countup.js": "^1.9.3",
+        "gatsby": "^2.0.111",
+        "gatsby-plugin-google-analytics": "^2.1.35",
+        "gatsby-plugin-postcss": "^2.0.5",
+        "gatsby-plugin-react-helmet": "^3.0.6",
+        "gatsby-plugin-robots-txt": "^1.5.0",
+        "gatsby-plugin-sitemap": "^2.2.27",
+        "less": "^3.9.0",
+        "postcss-browser-reporter": "^0.5.0",
+        "postcss-cssnext": "^3.1.0",
+        "postcss-import": "^12.0.1",
+        "postcss-reporter": "^6.0.1",
+        "proptypes": "^1.1.0",
+        "react": "^16.7.0",
+        "react-countup": "^4.0.0",
+        "react-dom": "^16.7.0",
+        "react-reveal": "^1.2.2",
+        "terser": "4.8.1"
+    },
+    "keywords": [
+        "gatsby"
+    ],
+    "license": "MIT",
+    "main": "n/a",
+    "scripts": {
+        "build": "npm run format && gatsby build && npm run test",
+        "build:prod": "gatsby build && npm run test",
+        "start": "gatsby develop -H 0.0.0.0",
+        "start:prod": "gatsby build && gatsby serve -o -H 0.0.0.0",
+        "format": "prettier  --write \"src/**/*.{js,jsx,less}\"",
+        "test": "node src/__tests__/test.js"
+    },
+    "devDependencies": {
+        "gatsby-image": "^2.2.34",
+        "gatsby-plugin-less": "^2.0.11",
+        "gatsby-plugin-sharp": "^2.0.22",
+        "gatsby-source-filesystem": "^2.0.22",
+        "gatsby-transformer-sharp": "^2.1.14",
+        "lighthouse": "^4.1.0",
+        "prettier": "^1.16.3",
+        "react-helmet": "^5.2.0",
+        "react-parallax": "^2.1.0"
+    },
+    "resolutions": {
+        "terser": "4.8.1"
+    }
 }

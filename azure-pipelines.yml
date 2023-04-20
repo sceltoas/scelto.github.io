@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm ci
-    npm run build
+    npm run build:prod
   displayName: 'npm install and build'
 
 - task: AzureRmWebAppDeployment@4
