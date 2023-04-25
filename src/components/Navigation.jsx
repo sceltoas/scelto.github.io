@@ -22,6 +22,7 @@ class Navigation extends React.Component {
             { href: '/jobbe-i-scelto', title: 'Jobbe i Scelto' },
             { href: '/ansatte', title: 'Menneskene' },
             { href: '/tjenester', title: 'Tjenester' },
+            { href: '/samfunn', title: 'Scelto i samfunnet' },
             { href: '/kontakt', title: 'Kontakt' },
         ];
 

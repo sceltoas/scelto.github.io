@@ -1,0 +1,48 @@
+.fn-image {
+    display: block;
+    width: 100%;
+    max-width: 1044px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.fn-header {
+    font-size: 1.75rem;
+    text-align: center;
+    padding-top: 24px;
+}
+
+.fn-image-list {
+    list-style-type: none;
+    padding-top: 40px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 30px 0 0 0;
+    margin: 0;
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.fn-image-list-item {
+    max-width: 161px;
+
+    > img {
+        display: block;
+        width: 100%;
+    }
+
+    &:last-of-type {
+        background-color: #f1f1f3;
+    }
+}
+
+.fn-list {
+    padding-left: 1em;
+}
