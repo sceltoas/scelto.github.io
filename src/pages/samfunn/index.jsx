@@ -55,9 +55,21 @@ const IndexPage = () => {
                 </p>
                 <p>
                     Vi har valgt oss ut tre områder vi brenner for og som
-                    tilsvarer FNs bærekraftsmål: nr 5. "Likestilling mellom
-                    kjønnene", nr 10. "Mindre ulikhet" og nr 13. "Stoppe
-                    klimaendringene". Vårt program Scelto i samfunnet er noe
+                    tilsvarer FNs bærekraftsmål:
+                </p>
+                <ul>
+                    <li>
+                        nr 5. "Likestilling mellom kjønnene"
+                    </li>
+                    <li>
+                        nr 10. "Mindre ulikhet"
+                    </li>
+                    <li>
+                        nr 13. "Stoppe klimaendringene".
+                    </li>
+                </ul>
+                <p>
+                    Vårt program Scelto i samfunnet er noe
                     alle ansatte bidrar inn i og er stolte av å være en del av.
                     Følgende målsettinger gjelder for Scelto i Samfunnet:
                 </p>
@@ -67,13 +79,20 @@ const IndexPage = () => {
                         <p>
                             Scelto er Miljøfyrtårn-sertifiserte og skal bidra
                             til å bidra til å stoppe klimaendringene. Noen av
-                            hovedaktivitetene vi gjør i den forbindelse er:{' '}
-                            <br />
-                            Å satse på lokale oppdrag for å reise mindre <br />
-                            Ha en klimavennlig reise- og kontorpolicy
-                            <br />
-                            Redusere co2 utslipp pr ansatt
-                            <br />
+                            hovedaktivitetene vi gjør i den forbindelse er:
+                        </p>
+                        <ul>
+                            <li>
+                                Å satse på lokale oppdrag for å reise mindre
+                            </li>
+                            <li>
+                                Ha en klimavennlig reise- og kontorpolicy
+                            </li>
+                            <li>
+                                Redusere co2 utslipp pr ansatt
+                            </li>
+                        </ul>
+                        <p>
                             Se vår klima- og miljørapport for ytterligere
                             detaljer.
                         </p>
@@ -83,32 +102,43 @@ const IndexPage = () => {
                         <p>
                             Scelto skal jobbe for et økt antall kvinner i tech
                             og spesielt utviklere. Disse tiltakene er gjort:
-                            <br />
-                            Medlemskap i Ada. Ada er et prosjekt ved NTNU som
-                            bidrar til at det uteksamineres flere kvinner fra
-                            teknologiutdanninger på NTNU som har lav
-                            kvinneandel.
-                            <br />
-                            Et bevisst språk i bilde og tekstbruk i ekstern
-                            kommunikasjon.
-                            <br />
-                            Støtte TENK tech camp og stille med mentor. Målet er
-                            at flere jenter skal interessere seg for teknologi
-                            og få kunnskap om hvordan de kan være med på å
-                            utvikle verdiskapende teknologi i fremtiden.
                         </p>
+                        <ul>
+                            <li>
+                                Medlemskap i Ada. Ada er et prosjekt ved NTNU som
+                                bidrar til at det uteksamineres flere kvinner fra
+                                teknologiutdanninger på NTNU som har lav
+                                kvinneandel.
+                            </li>
+                            <li>
+                                Et bevisst språk i bilde og tekstbruk i ekstern
+                                kommunikasjon.
+                            </li>
+                            <li>
+                                Støtte TENK tech camp og stille med mentor. Målet er
+                                at flere jenter skal interessere seg for teknologi
+                                og få kunnskap om hvordan de kan være med på å
+                                utvikle verdiskapende teknologi i fremtiden.
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <p>
                             Mindre ulikhet, integrering og inkludering - FNs
                             bærekraftsmål nr 10
                         </p>
+                        <ul>
+                            <li>
+                                Scelto skal være med å bidra til mindre ulikhet, økt
+                                integrering og inkludering i samfunnet.
+                            </li>
+                            <li>
+                                Gratis sykkelservice for de ansatte fra På hjul
+                                sykkelverksted en gang pr år
+                            </li>
+                        </ul>
                         <p>
-                            Scelto skal være med å bidra til mindre ulikhet, økt
-                            integrering og inkludering i samfunnet. Gratis
-                            sykkelservice for de ansatte fra På hjul
-                            sykkelverksted en gang pr år, et sykkelverksted med
-                            mening. Paahjul er et profesjonelt sykkelverksted
+                            Paahjul er et profesjonelt sykkelverksted
                             eid av Kirkens Bymisjon. I tillegg til å reparere
                             sykler, gir Paahjul arbeidstrening til mennesker med
                             tidligere rusutfordringer. Velger du å reparere
