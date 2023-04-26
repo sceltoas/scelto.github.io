@@ -1,13 +1,13 @@
+import Fremtind from './images/customers/fremtind.png';
+import Nav from './images/customers/nav.png';
+import Norwegian from './images/customers/norwegian.png';
 import NRK from './images/customers/NRK_positiv_rgb.png';
-import StatensVegvesen from './images/customers/Vegvesen_LOGO_farger_pos_RGB.png';
+import Ruter from './images/customers/ruter.png';
 import Skatteetaten from './images/customers/skatteetaten.svg';
 import Sparebank1 from './images/customers/sparebank1.svg';
-import Fremtind from './images/customers/fremtind.png';
 import Tomra from './images/customers/tomra.png';
-import Ruter from './images/customers/ruter.png';
-import Nav from './images/customers/nav.png';
+import StatensVegvesen from './images/customers/Vegvesen_LOGO_farger_pos_RGB.png';
 import Vy from './images/customers/vy.png';
-import Norwegian from './images/customers/norwegian.png';
 
 export const kunder = [
     {

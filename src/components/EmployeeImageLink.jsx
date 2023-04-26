@@ -1,17 +1,17 @@
-import React from 'react';
-import './EmployeeImageLink.less';
-import { Link as GLink } from 'gatsby';
+import {Link as GLink} from 'gatsby';
 import Img from 'gatsby-image';
-import Link from './Link';
+import React from 'react';
+import * as styles from './EmployeeImageLink.module.less';
+import * as linkStyles from './Link.module.less';
 
 const EmployeeImageLink = ({ name, title, image, to }) => (
-    <GLink to={to} className="employee-image-link">
+    <GLink to={to} className={styles.employeeImageLink}>
         <div className="image">
             <Img fixed={image} alt={`Bilde av ${name}`} />
         </div>
-        <div className="employee-image-link__text-container">
+        <div className={styles.employeeImageLink__textContainer}>
             <h5>
-                <Link to={to}>{name}</Link>
+                <span className={linkStyles.link}>{name}</span>
             </h5>
             <p>{title}</p>
         </div>

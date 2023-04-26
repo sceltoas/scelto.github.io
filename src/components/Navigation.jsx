@@ -1,9 +1,9 @@
+import {Link as GatsbyLink} from 'gatsby';
 import React from 'react';
-import { Link as GatsbyLink } from 'gatsby';
-import logo from '../images/logo-green-white-trans.png';
-import MenuIcon from '../images/icons/Scelto–icon-menu.svg';
 import CloseMenu from '../images/icons/Scelto–icon-close-hover.svg';
-import './Navigation.less';
+import MenuIcon from '../images/icons/Scelto–icon-menu.svg';
+import logo from '../images/logo-green-white-trans.png';
+import * as styles from './Navigation.module.less';
 import Link from './Link';
 
 class Navigation extends React.Component {
@@ -28,16 +28,15 @@ class Navigation extends React.Component {
 
         return (
             <div id="index-banner">
-                <nav className="navigation" role="navigation">
+                <nav className={styles.navigation} role="navigation">
                     {this.state.open && (
-                        <div className="dropdown-menu">
-                            <div className="dropdown-menu__bar">
+                        <div className={styles.dropdownMenu}>
+                            <div className={styles.dropdownMenu__bar}>
                                 <GatsbyLink
                                     onClick={() => {
                                         this.toggleMenu(false);
                                     }}
                                     to="/"
-                                    className="logo"
                                 >
                                     <img src={logo} alt="Logo for Scelto" />
                                 </GatsbyLink>
@@ -48,7 +47,6 @@ class Navigation extends React.Component {
                                         this.toggleMenu();
                                         event.stopPropagation();
                                     }}
-                                    className=""
                                 >
                                     <img
                                         src={CloseMenu}
@@ -57,7 +55,7 @@ class Navigation extends React.Component {
                                     />
                                 </button>
                             </div>
-                            <ul className="dropdown-menu__menu-items">
+                            <ul className={styles.dropdownMenu__menuItems}>
                                 {menuItems.map((item, index) => (
                                     <li key={index}>
                                         <Link
@@ -78,7 +76,7 @@ class Navigation extends React.Component {
                             </ul>
                         </div>
                     )}
-                    <div className="hide-on-med-and-down">
+                    <div className={styles.hideOnMedAndDown}>
                         <GatsbyLink to="/" className="logo">
                             <img src={logo} alt="Logo for Scelto" />
                         </GatsbyLink>
@@ -109,7 +107,7 @@ class Navigation extends React.Component {
                         </ul>
                     </div>
                     {!this.state.open && (
-                        <div className="hide-on-large-only">
+                        <div className={styles.hideOnLargeOnly}>
                             <GatsbyLink to="/" className="logo">
                                 <img src={logo} alt="Logo for Scelto" />
                             </GatsbyLink>

@@ -1,8 +1,8 @@
-import React from 'react';
+import {Link} from 'gatsby-link';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import React from 'react';
+import {Fade} from "react-awesome-reveal";
 import ArrowDown from '../images/icons/Scelto–icon-arrow-down-dark-bg.svg';
-import Fade from 'react-reveal/Fade';
 import './FullPageImageWithHeader.less';
 
 const FullPageImageWithHeader = ({

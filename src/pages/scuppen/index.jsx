@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
-import Navigation from '../../components/Navigation';
-import Puzzle from '../../images/puzzle.jpeg';
+import React, {Fragment} from 'react';
 import Helmet from 'react-helmet';
-import Favicon from '../../images/favicon.png';
-import Footer from '../../components/Footer';
-import { createMetadata } from '../../utils';
+import Navigation from '../../components/Navigation';
 import Section from '../../components/Section';
-import { getScores, rounds } from '../../scores';
+import Favicon from '../../images/favicon.png';
+import Puzzle from '../../images/puzzle.jpeg';
+import {getScores, rounds} from '../../scores';
+import {createMetadata} from '../../utils';
 
 import './index.less';
+import Footer from '../../components/Footer';
 
 const IndexPage = () => (
     <Fragment>

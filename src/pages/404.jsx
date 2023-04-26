@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
-import Navigation from '../components/Navigation';
-import Helmet from 'react-helmet';
-import Favicon from '../images/favicon.png';
-import Footer from '../components/Footer';
-import NavigationImage from '../images/navigation.jpeg';
-import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
+import React, {Fragment} from 'react';
 import CountUp from 'react-countup';
+import Helmet from 'react-helmet';
+import Footer from '../components/Footer';
+import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
+import Navigation from '../components/Navigation';
+import Favicon from '../images/favicon.png';
+import NavigationImage from '../images/navigation.jpeg';
 
 const NotFoundPage = () => (
     <Fragment>

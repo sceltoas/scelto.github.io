@@ -1,7 +1,7 @@
-import React from 'react';
+import {Link} from 'gatsby';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
-import styles from './Button.module.less';
+import React from 'react';
+import * as styles from './Button.module.less';
 
 export const LightButton = ({ text, to, className, children, ...rest }) => (
     <button

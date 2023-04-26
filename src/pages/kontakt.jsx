@@ -1,16 +1,16 @@
-import React, { Fragment } from 'react';
-import FullPageImageWithContent from '../components/FullPageImageWithContent';
-import Navigation from '../components/Navigation';
-import InlineInput from '../components/InlineInput';
-import Working from '../images/contact.jpg';
+import React, {Fragment} from 'react';
+import {Fade} from 'react-awesome-reveal';
 import Helmet from 'react-helmet';
-import Favicon from '../images/favicon.png';
+import {LightButton} from '../components/Button';
 import Footer from '../components/Footer';
-import styles from './kontakt.module.less';
+import FullPageImageWithContent from '../components/FullPageImageWithContent';
+import InlineInput from '../components/InlineInput';
+import Navigation from '../components/Navigation';
+import Working from '../images/contact.jpg';
+import Favicon from '../images/favicon.png';
 import DL from '../images/tor_eric_crop.jpg';
-import { LightButton } from '../components/Button';
-import Fade from 'react-reveal/Fade';
-import { createMetadata } from '../utils';
+import {createMetadata} from '../utils';
+import * as styles from './kontakt.module.less';
 
 class IndexPage extends React.Component {
     constructor(props) {
@@ -90,7 +90,7 @@ class IndexPage extends React.Component {
                                         className={styles.kvitteringImage}
                                         src={DL}
                                     />
-                                    <div className={styles.kvitteringWrapper}>
+                                    <div>
                                         <h4 className={styles.kvitteringText}>
                                             Jeg kontakter deg!
                                         </h4>

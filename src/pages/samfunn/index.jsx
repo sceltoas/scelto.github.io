@@ -1,23 +1,10 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import Helmet from 'react-helmet';
-import { createMetadata } from '../../utils';
-import HeaderImage from '../../images/silver-laptop-computer-next-to-ceramic-cup-42408.jpg';
+import Footer from "../../components/Footer";
+import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import Navigation from '../../components/Navigation';
 import Section from '../../components/Section';
-import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
-import Footer from "../../components/Footer";
-
-import LaptopHands from '../../images/laptop-hands-floating-boxes.jpg';
-import FnWheel from '../../images/fn/fn-wheel.png';
 import Fn1 from '../../images/fn/1.png';
-import Fn2 from '../../images/fn/2.png';
-import Fn3 from '../../images/fn/3.png';
-import Fn4 from '../../images/fn/4.png';
-import Fn5 from '../../images/fn/5.png';
-import Fn6 from '../../images/fn/6.png';
-import Fn7 from '../../images/fn/7.png';
-import Fn8 from '../../images/fn/8.png';
-import Fn9 from '../../images/fn/9.png';
 import Fn10 from '../../images/fn/10.png';
 import Fn11 from '../../images/fn/11.png';
 import Fn12 from '../../images/fn/12.png';
@@ -26,6 +13,19 @@ import Fn14 from '../../images/fn/14.png';
 import Fn15 from '../../images/fn/15.png';
 import Fn16 from '../../images/fn/16.png';
 import Fn17 from '../../images/fn/17.png';
+import Fn2 from '../../images/fn/2.png';
+import Fn3 from '../../images/fn/3.png';
+import Fn4 from '../../images/fn/4.png';
+import Fn5 from '../../images/fn/5.png';
+import Fn6 from '../../images/fn/6.png';
+import Fn7 from '../../images/fn/7.png';
+import Fn8 from '../../images/fn/8.png';
+import Fn9 from '../../images/fn/9.png';
+import FnWheel from '../../images/fn/fn-wheel.png';
+
+import LaptopHands from '../../images/laptop-hands-floating-boxes.jpg';
+import HeaderImage from '../../images/silver-laptop-computer-next-to-ceramic-cup-42408.jpg';
+import {createMetadata} from '../../utils';
 
 import './index.less';
 

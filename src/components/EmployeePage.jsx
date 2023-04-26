@@ -1,19 +1,19 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
+import {Fade} from 'react-awesome-reveal';
+import Helmet from 'react-helmet';
+import {Parallax} from 'react-parallax';
+import {ansatteMedAssets} from '../ansatte-med-assets';
+import Favicon from '../images/favicon.png';
+import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
+import {createMetadata} from '../utils';
+import {LightButtonAnchor} from './Button';
+import CenteredText from './CenteredText';
 import EmployeeIntroWithImage from './EmployeeIntroWithImage';
+import './EmployeePage.less';
+import EmployeeTestimonial from './EmployeeTestimonial';
+import Footer from './Footer';
 import Navigation from './Navigation';
 import Section from './Section';
-import { ansatteMedAssets } from '../ansatte-med-assets';
-import Helmet from 'react-helmet';
-import Favicon from '../images/favicon.png';
-import CenteredText from './CenteredText';
-import { Parallax } from 'react-parallax';
-import Fade from 'react-reveal/Fade';
-import Footer from './Footer';
-import { LightButtonAnchor } from './Button';
-import { createMetadata } from '../utils';
-import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
-import EmployeeTestimonial from './EmployeeTestimonial';
-import './EmployeePage.less';
 
 const currentOrigin =
     typeof window !== `undefined`
@@ -80,18 +80,20 @@ const EmployeePage = props => {
                 ingress={employee.ingress}
                 useStyles={false}
             >
-                {employee.mainSection &&
-                    employee.mainSection.length > 1 &&
-                    employee.mainSection.map((section, index) => (
-                        <Fade key={index}>
-                            <p>{section}</p>
-                        </Fade>
-                    ))}
-                <div className="sc-button-container">
-                    <LightButtonAnchor
-                        href={employee.linkToCV}
-                    >{`Last ned ${employee.firstName} sin CV`}</LightButtonAnchor>
-                </div>
+                <React.Fragment>
+                    {employee.mainSection &&
+                        employee.mainSection.length > 1 &&
+                        employee.mainSection.map((section, index) => (
+                            <Fade key={index}>
+                                <p>{section}</p>
+                            </Fade>
+                        ))}
+                    <div className="sc-button-container">
+                        <LightButtonAnchor
+                            href={employee.linkToCV}
+                        >{`Last ned ${employee.firstName} sin CV`}</LightButtonAnchor>
+                    </div>
+                </React.Fragment>
             </Section>
             <Parallax bgImage={employee.customImage}>
                 <CenteredText

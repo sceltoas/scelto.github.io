@@ -1,8 +1,8 @@
 import React from 'react';
 import LinkedIn from '../images/icons/Scelto–icon-linkedin-footer.svg';
 import Twitter from '../images/icons/Scelto–icon-twitter-footer.svg';
-import styles from './Footer.module.less';
 import miljofyrtarn from '../images/Miljfyrtarn-ensfarget-hvit.png';
+import * as styles from './Footer.module.less';
 
 const Footer = () => (
     <footer className={styles.footer}>

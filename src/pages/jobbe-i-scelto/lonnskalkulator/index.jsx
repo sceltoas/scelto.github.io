@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react';
-import DL from '../../../images/tor_eric_crop.jpg';
-import Section from '../../../components/Section';
-import HeaderImage from '../../../images/direction-scelto.jpeg';
-import SalaryCalculator from '../../../components/SalaryCalculator';
+import React, {Fragment} from 'react';
 import Helmet from 'react-helmet';
-import Favicon from '../../../images/favicon.png';
 import Footer from '../../../components/Footer';
 import Navigation from '../../../components/Navigation';
-import { createMetadata } from '../../../utils';
+import SalaryCalculator from '../../../components/SalaryCalculator';
+import Section from '../../../components/Section';
+import HeaderImage from '../../../images/direction-scelto.jpeg';
+import Favicon from '../../../images/favicon.png';
+import DL from '../../../images/tor_eric_crop.jpg';
+import {createMetadata} from '../../../utils';
 
 import './index.less';
 
