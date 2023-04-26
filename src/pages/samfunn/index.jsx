@@ -5,6 +5,7 @@ import HeaderImage from '../../images/silver-laptop-computer-next-to-ceramic-cup
 import Navigation from '../../components/Navigation';
 import Section from '../../components/Section';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
+import Footer from "../../components/Footer";
 
 import LaptopHands from '../../images/laptop-hands-floating-boxes.jpg';
 import FnWheel from '../../images/fn/fn-wheel.png';
@@ -199,6 +200,7 @@ const IndexPage = () => {
                     </li>
                 </ol>
             </Section>
+            <Footer />
         </Fragment>
     );
 };
