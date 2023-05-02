@@ -1,8 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import Fade from 'react-reveal/Fade';
+import React from 'react';
+import {Fade} from 'react-awesome-reveal';
 
-import './Section.less';
+import * as styles from './Section.module.less';
 
 const Section = ({
     id,
@@ -17,7 +17,7 @@ const Section = ({
 }) => (
     <section
         id={id}
-        className={`section ${className}`}
+        className={`${styles.section} ${className}`}
         style={
             useStyles
                 ? {
@@ -47,12 +47,12 @@ const Section = ({
             )}
             {title && (
                 <Fade>
-                    <h1 className="section__header">{title}</h1>
+                    <h1 className={styles.section__header}>{title}</h1>
                 </Fade>
             )}
             {ingress && (
                 <Fade>
-                    <h5 className="section__ingress">{ingress}</h5>
+                    <h5>{ingress}</h5>
                 </Fade>
             )}
             {children}

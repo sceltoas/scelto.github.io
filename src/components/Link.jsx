@@ -1,10 +1,10 @@
-import React from 'react';
+import {Link as GLink} from 'gatsby';
 import PropTypes from 'prop-types';
-import { Link as GLink } from 'gatsby';
-import './Link.less';
+import React from 'react';
+import * as styles from './Link.module.less';
 
 const Link = ({ to, children }) => (
-    <GLink to={to} className="link">
+    <GLink to={to} className={styles.link}>
         {children}
     </GLink>
 );

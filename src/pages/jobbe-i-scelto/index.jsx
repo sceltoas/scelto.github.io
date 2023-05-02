@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
-import Link from 'gatsby-link';
-import DL from '../../images/tor_eric_crop.jpg';
-import Section from '../../components/Section';
-import HeaderImage from '../../images/silver-laptop-computer-next-to-ceramic-cup-42408.jpg';
+import {Link} from 'gatsby-link';
+import React, {Fragment} from 'react';
 import Helmet from 'react-helmet';
-import Favicon from '../../images/favicon.png';
 import Footer from '../../components/Footer';
-import Navigation from '../../components/Navigation';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
-import { kunder } from '../../kunder';
-import { createMetadata } from '../../utils';
+import Navigation from '../../components/Navigation';
+import Section from '../../components/Section';
+import Favicon from '../../images/favicon.png';
+import HeaderImage from '../../images/silver-laptop-computer-next-to-ceramic-cup-42408.jpg';
+import DL from '../../images/tor_eric_crop.jpg';
+import {kunder} from '../../kunder';
+import {createMetadata} from '../../utils';
 
 import './index.less';
 

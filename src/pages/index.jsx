@@ -1,23 +1,23 @@
-import React, { Fragment } from 'react';
-import { graphql } from 'gatsby';
-import EmployeeImageLink from '../components/EmployeeImageLink';
-import SystemutviklingIcon from '../images/icons/Scelto–illustration-systemutvikling-dark-bg-tjenester.svg';
-import ArkitekturIcon from '../images/icons/Scelto–illustration-arkitektur-dark-bg-frontpage.svg';
-import Section from '../components/Section';
-import IconTitleAndIntroLink from '../components/IconTitleAndIntroLink';
-import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
-import Employees from '../images/man-headphones-working.jpeg';
-import Fade from 'react-reveal/Fade';
-import Navigation from '../components/Navigation';
+import {graphql} from 'gatsby';
+import React, {Fragment} from 'react';
+import {Fade} from 'react-awesome-reveal';
 import Helmet from 'react-helmet';
-import Favicon from '../images/favicon.png';
+import {sortedAnsatte} from '../ansatte-med-assets';
+import {DarkButton, LightButton} from '../components/Button';
+import EmployeeImageLink from '../components/EmployeeImageLink';
 import Footer from '../components/Footer';
-import { LightButton, DarkButton } from '../components/Button';
-import { createMetadata } from '../utils';
+import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
+import IconTitleAndIntroLink from '../components/IconTitleAndIntroLink';
+import Navigation from '../components/Navigation';
+import Section from '../components/Section';
+import Favicon from '../images/favicon.png';
+import ArkitekturIcon from '../images/icons/Scelto–illustration-arkitektur-dark-bg-frontpage.svg';
+import SystemutviklingIcon from '../images/icons/Scelto–illustration-systemutvikling-dark-bg-tjenester.svg';
+import Employees from '../images/man-headphones-working.jpeg';
 import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
-import { sortedAnsatte } from '../ansatte-med-assets';
 
 import '../layouts/scelto.less';
+import {createMetadata} from '../utils';
 import './index.less';
 
 const IndexPage = props => {

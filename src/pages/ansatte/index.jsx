@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
+import {graphql} from 'gatsby';
+import React, {Fragment} from 'react';
+import Helmet from 'react-helmet';
+import {sortedAnsatte} from '../../ansatte-med-assets';
 import EmployeeImageLink from '../../components/EmployeeImageLink';
+import Footer from '../../components/Footer';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import Navigation from '../../components/Navigation';
-import SmartPeople from '../../images/smart-people.jpg';
 import Favicon from '../../images/favicon.png';
-import Helmet from 'react-helmet';
-import Footer from '../../components/Footer';
-import { createMetadata } from '../../utils';
-import { graphql } from 'gatsby';
 import DefaultEmployeeImage from '../../images/mugshots/no-pic-yet.jpg';
-import { sortedAnsatte } from '../../ansatte-med-assets';
+import SmartPeople from '../../images/smart-people.jpg';
+import {createMetadata} from '../../utils';
 
 const IndexPage = props => {
     const title = 'Hva kjennetegner en Scelto-konsulent?';
@@ -24,9 +24,9 @@ const IndexPage = props => {
                     description,
                     image: SmartPeople,
                 })}
-                link={[{ rel: 'icon', href: Favicon }]}
+                link={[{rel: 'icon', href: Favicon}]}
             />
-            <Navigation />
+            <Navigation/>
             <FullPageImageWithHeader
                 image={SmartPeople}
                 title={title}
@@ -46,7 +46,7 @@ const IndexPage = props => {
                     margin: '50px 20px 0',
                 }}
             >
-                {sortedAnsatte.map(({ name, title, key }) => {
+                {sortedAnsatte.map(({name, title, key}) => {
                     const image = props.data.EmployeeImages.edges.find(
                         node => node.node.name === key
                     );
@@ -65,7 +65,7 @@ const IndexPage = props => {
                     );
                 })}
             </div>
-            <Footer />
+            <Footer/>
         </Fragment>
     );
 };

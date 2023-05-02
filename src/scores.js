@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import each from 'lodash/each';
 
 const PARTICIPATED = -1;
 const NOT_PARTICIPATED = -2;
@@ -217,7 +217,7 @@ function calcScore(participant) {
     let totalScore = 0;
     let scores = [];
     let scoreValues = [];
-    _.each(participant.results, function (result, i) {
+    each(participant.results, function (result, i) {
         let event = rounds[i];
         let numberOfScoredPlaces = event.points.length;
 
@@ -236,26 +236,28 @@ function calcScore(participant) {
         }
     });
 
-    participant.resultList = scores.join(', ');
-    participant.score = totalScore;
-    participant.scoreValues = scoreValues;
+    return {
+        ...participant,
+        resultList: scores.join(', '),
+        score: totalScore,
+        scoreValues: scoreValues,
+    }
 }
 
 function calcCountingScore(participant) {
-    participant.countingScore = participant.scoreValues.reduce(
-        (acc, curr) => acc + curr,
-        0
-    );
+    return {
+        ...participant,
+        countingScore: participant.scoreValues.reduce(
+            (acc, curr) => acc + curr,
+            0
+        )
+    }
 }
 
 export function getScores() {
-    return _.chain(participants)
-        .each(calcScore)
-        .each(calcCountingScore)
-        .orderBy('countingScore', 'desc')
-        .value();
-}
-
-function compareNumbers(a, b) {
-    return a - b;
+    return participants
+        .map(calcScore)
+        .map(calcCountingScore)
+        .sort((a, b) => a.countingScore - b.countingScore)
+        .reverse()
 }
