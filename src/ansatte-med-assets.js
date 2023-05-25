@@ -66,7 +66,7 @@ export const ansatteMedAssets = {
         ...ansatte.toreric,
         image: (
             <StaticImage
-                src={'./images/mugshots/toreric.jpg'}
+                src={'../static/mugshots/toreric.jpg'}
                 {...imageProps}
             />
         ),
@@ -77,7 +77,7 @@ export const ansatteMedAssets = {
         ...ansatte.oletommy,
         image: (
             <StaticImage
-                src={'./images/mugshots/oletommy.jpg'}
+                src={'../static/mugshots/oletommy.jpg'}
                 {...imageProps}
             />
         ),
@@ -87,7 +87,7 @@ export const ansatteMedAssets = {
     herman: {
         ...ansatte.herman,
         image: (
-            <StaticImage src={'./images/mugshots/herman.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/herman.jpg'} {...imageProps} />
         ),
         linkToCV: HermanCV,
         customImage: HermanBackground,
@@ -95,7 +95,7 @@ export const ansatteMedAssets = {
     haaken: {
         ...ansatte.haaken,
         image: (
-            <StaticImage src={'./images/mugshots/haaken.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/haaken.jpg'} {...imageProps} />
         ),
         linkToCV: HaakenCV,
         customImage: RetroSykkel,
@@ -103,7 +103,7 @@ export const ansatteMedAssets = {
     marius: {
         ...ansatte.marius,
         image: (
-            <StaticImage src={'./images/mugshots/marius.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/marius.jpg'} {...imageProps} />
         ),
         linkToCV: MariusCV,
         customImage: Nerd,
@@ -111,7 +111,7 @@ export const ansatteMedAssets = {
     gustav: {
         ...ansatte.gustav,
         image: (
-            <StaticImage src={'./images/mugshots/gustav.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/gustav.jpg'} {...imageProps} />
         ),
         linkToCV: GustavCV,
         customImage: Kode,
@@ -119,7 +119,7 @@ export const ansatteMedAssets = {
     erlend: {
         ...ansatte.erlend,
         image: (
-            <StaticImage src={'./images/mugshots/erlend.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/erlend.jpg'} {...imageProps} />
         ),
         linkToCV: ErlendCV,
         customImage: Scooter,
@@ -128,7 +128,7 @@ export const ansatteMedAssets = {
         ...ansatte.richard,
         image: (
             <StaticImage
-                src={'./images/mugshots/richard.jpg'}
+                src={'../static/mugshots/richard.jpg'}
                 {...imageProps}
             />
         ),
@@ -138,7 +138,7 @@ export const ansatteMedAssets = {
     erik: {
         ...ansatte.erik,
         image: (
-            <StaticImage src={'./images/mugshots/erik.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/erik.jpg'} {...imageProps} />
         ),
         linkToCV: ErikCV,
         customImage: Skateboard,
@@ -147,7 +147,7 @@ export const ansatteMedAssets = {
         ...ansatte.janerik,
         image: (
             <StaticImage
-                src={'./images/mugshots/janerik.jpg'}
+                src={'../static/mugshots/janerik.jpg'}
                 {...imageProps}
             />
         ),
@@ -157,7 +157,7 @@ export const ansatteMedAssets = {
     ivar: {
         ...ansatte.ivar,
         image: (
-            <StaticImage src={'./images/mugshots/ivar.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/ivar.jpg'} {...imageProps} />
         ),
         linkToCV: IvarCV,
         customImage: IvarBackground,
@@ -165,7 +165,7 @@ export const ansatteMedAssets = {
     vetle: {
         ...ansatte.vetle,
         image: (
-            <StaticImage src={'./images/mugshots/vetle.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/vetle.jpg'} {...imageProps} />
         ),
         linkToCV: VetleCV,
         customImage: RustenBil,
@@ -173,7 +173,7 @@ export const ansatteMedAssets = {
     sean: {
         ...ansatte.sean,
         image: (
-            <StaticImage src={'./images/mugshots/sean.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/sean.jpg'} {...imageProps} />
         ),
         linkToCV: SeanCV,
         customImage: RustenBil,
@@ -181,7 +181,7 @@ export const ansatteMedAssets = {
     ken: {
         ...ansatte.ken,
         image: (
-            <StaticImage src={'./images/mugshots/ken.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/ken.jpg'} {...imageProps} />
         ),
         linkToCV: KenCV,
         customImage: RustenBil,
@@ -190,7 +190,7 @@ export const ansatteMedAssets = {
         ...ansatte.fredrikb,
         image: (
             <StaticImage
-                src={'./images/mugshots/fredrikb.jpg'}
+                src={'../static/mugshots/fredrikb.jpg'}
                 {...imageProps}
             />
         ),
@@ -201,7 +201,7 @@ export const ansatteMedAssets = {
         ...ansatte.fredriks,
         image: (
             <StaticImage
-                src={'./images/mugshots/fredriks.jpg'}
+                src={'../static/mugshots/fredriks.jpg'}
                 {...imageProps}
             />
         ),
@@ -211,7 +211,7 @@ export const ansatteMedAssets = {
     terje: {
         ...ansatte.terje,
         image: (
-            <StaticImage src={'./images/mugshots/terje.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/terje.jpg'} {...imageProps} />
         ),
         linkToCV: TerjeCV,
         customImage: Music,
@@ -220,7 +220,7 @@ export const ansatteMedAssets = {
         ...ansatte.larsolav,
         image: (
             <StaticImage
-                src={'./images/mugshots/larsolav.jpg'}
+                src={'../static/mugshots/larsolav.jpg'}
                 {...imageProps}
             />
         ),
@@ -231,7 +231,7 @@ export const ansatteMedAssets = {
         ...ansatte.annkatrin,
         image: (
             <StaticImage
-                src={'./images/mugshots/annkatrin.jpg'}
+                src={'../static/mugshots/annkatrin.jpg'}
                 {...imageProps}
             />
         ),
@@ -241,7 +241,7 @@ export const ansatteMedAssets = {
     jorgen: {
         ...ansatte.jorgen,
         image: (
-            <StaticImage src={'./images/mugshots/jorgen.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/jorgen.jpg'} {...imageProps} />
         ),
         linkToCV: JoergenCV,
         customImage: Music,
@@ -249,7 +249,7 @@ export const ansatteMedAssets = {
     baard: {
         ...ansatte.baard,
         image: (
-            <StaticImage src={'./images/mugshots/baard.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/baard.jpg'} {...imageProps} />
         ),
         linkToCV: '#',
         customImage: Music,
@@ -258,7 +258,7 @@ export const ansatteMedAssets = {
         ...ansatte.andreas,
         image: (
             <StaticImage
-                src={'./images/mugshots/andreas.jpg'}
+                src={'../static/mugshots/andreas.jpg'}
                 {...imageProps}
             />
         ),
@@ -269,7 +269,7 @@ export const ansatteMedAssets = {
         ...ansatte.hallvard,
         image: (
             <StaticImage
-                src={'./images/mugshots/hallvard.jpg'}
+                src={'../static/mugshots/hallvard.jpg'}
                 {...imageProps}
             />
         ),
@@ -279,7 +279,7 @@ export const ansatteMedAssets = {
     ismar: {
         ...ansatte.ismar,
         image: (
-            <StaticImage src={'./images/mugshots/ismar.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/ismar.jpg'} {...imageProps} />
         ),
         linkToCV: IsmarCV,
         customImage: Yoga,
@@ -287,7 +287,7 @@ export const ansatteMedAssets = {
     haakon: {
         ...ansatte.haakon,
         image: (
-            <StaticImage src={'./images/mugshots/haakon.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/haakon.jpg'} {...imageProps} />
         ),
         linkToCV: HaakonCV,
         customImage: HaakonBackground,
@@ -296,7 +296,7 @@ export const ansatteMedAssets = {
         ...ansatte.frederik,
         image: (
             <StaticImage
-                src={'./images/mugshots/frederik.jpg'}
+                src={'../static/mugshots/frederik.jpg'}
                 {...imageProps}
             />
         ),
@@ -306,7 +306,7 @@ export const ansatteMedAssets = {
     eirik: {
         ...ansatte.eirik,
         image: (
-            <StaticImage src={'./images/mugshots/eirik.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/eirik.jpg'} {...imageProps} />
         ),
         linkToCV: EirikCV,
         customImage: Nerd,
@@ -314,7 +314,7 @@ export const ansatteMedAssets = {
     erike: {
         ...ansatte.erike,
         image: (
-            <StaticImage src={'./images/mugshots/erike.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/erike.jpg'} {...imageProps} />
         ),
         linkToCV: ErikeCV,
         customImage: Yoga,
@@ -323,7 +323,7 @@ export const ansatteMedAssets = {
         ...ansatte.toratle,
         image: (
             <StaticImage
-                src={'./images/mugshots/toratle.jpg'}
+                src={'../static/mugshots/toratle.jpg'}
                 {...imageProps}
             />
         ),
@@ -333,7 +333,7 @@ export const ansatteMedAssets = {
     endre: {
         ...ansatte.endre,
         image: (
-            <StaticImage src={'./images/mugshots/endre.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/endre.jpg'} {...imageProps} />
         ),
         linkToCv: EndreCV,
         customImage: Yoga,
@@ -342,7 +342,7 @@ export const ansatteMedAssets = {
         ...ansatte.kjellolav,
         image: (
             <StaticImage
-                src={'./images/mugshots/kjellolav.jpg'}
+                src={'../static/mugshots/kjellolav.jpg'}
                 {...imageProps}
             />
         ),
@@ -352,7 +352,7 @@ export const ansatteMedAssets = {
     ida: {
         ...ansatte.ida,
         image: (
-            <StaticImage src={'./images/mugshots/ida.jpg'} {...imageProps} />
+            <StaticImage src={'../static/mugshots/ida.jpg'} {...imageProps} />
         ),
         linkToCv: IdaCV,
         customImage: Cards,
