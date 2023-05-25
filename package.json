@@ -30,7 +30,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "npm run format && gatsby build && npm run test",
+    "build": "npm run format && gatsby clean && gatsby build && npm run test",
     "start": "gatsby develop -H 0.0.0.0",
     "start:prod": "gatsby clean && gatsby build && gatsby serve -o -H 0.0.0.0",
     "format": "prettier  --write \"src/**/*.{js,jsx,less}\"",
