@@ -59,6 +59,7 @@ const imageProps = {
     width: 300,
     height: 450,
     alt: '',
+    formats: ["jpg"]
 };
 
 export const ansatteMedAssets = {
