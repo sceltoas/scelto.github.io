@@ -62,7 +62,7 @@ const images = [
 
 const TiledBackground = () => (
     <div className="tiled-background">
-        {images.map(image => (
+        {images.map((image) => (
             <img className="image" src={image} aria-label="Image" />
         ))}
     </div>
@@ -86,7 +86,7 @@ export const AltTiledBackground = () => {
         }
     });
 
-    const tmp = columnizedImages.map(column => {
+    const tmp = columnizedImages.map((column) => {
         return (
             <div className="column-erik">
                 {column.map((image, index) => (
@@ -98,7 +98,7 @@ export const AltTiledBackground = () => {
 
     return (
         <div className="tiled-background ">
-            {tmp.map(item => (
+            {tmp.map((item) => (
                 <div className="row-erik">{item}</div>
             ))}
         </div>

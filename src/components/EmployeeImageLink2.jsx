@@ -1,4 +1,4 @@
-import {Link} from 'gatsby-link';
+import { Link } from 'gatsby-link';
 import React from 'react';
 
 const EmployeeImageLink = ({ name, title, image, to }) => (

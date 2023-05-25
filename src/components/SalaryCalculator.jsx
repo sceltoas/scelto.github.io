@@ -107,7 +107,7 @@ class SalaryCalculator extends React.Component {
 
     formatMoneys(n) {
         // https://stackoverflow.com/a/14428340/957731
-        return ('' + n).replace(/./g, function(c, i, a) {
+        return ('' + n).replace(/./g, function (c, i, a) {
             return i && c !== '.' && (a.length - i) % 3 === 0
                 ? '\u00A0' + c
                 : c;

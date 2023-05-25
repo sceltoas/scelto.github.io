@@ -1,9 +1,8 @@
-import {graphql} from 'gatsby';
-import React, {Fragment} from 'react';
-import {Fade} from 'react-awesome-reveal';
+import React, { Fragment } from 'react';
+import { Fade } from 'react-awesome-reveal';
 import Helmet from 'react-helmet';
-import {sortedAnsatte} from '../ansatte-med-assets';
-import {DarkButton, LightButton} from '../components/Button';
+import { sortedAnsatte } from '../ansatte-med-assets';
+import { DarkButton, LightButton } from '../components/Button';
 import EmployeeImageLink from '../components/EmployeeImageLink';
 import Footer from '../components/Footer';
 import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
@@ -14,20 +13,18 @@ import Favicon from '../images/favicon.png';
 import ArkitekturIcon from '../images/icons/Scelto–illustration-arkitektur-dark-bg-frontpage.svg';
 import SystemutviklingIcon from '../images/icons/Scelto–illustration-systemutvikling-dark-bg-tjenester.svg';
 import Employees from '../images/man-headphones-working.jpeg';
-import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
 
 import '../layouts/scelto.less';
-import {createMetadata} from '../utils';
+import { createMetadata } from '../utils';
 import './index.less';
 
-const IndexPage = props => {
+const IndexPage = (props) => {
     return (
         <Fragment>
             <Helmet
                 title="Scelto AS"
                 meta={createMetadata({
-                    title:
-                        'En lagspiller, lett å samarbeid med, og et positivt bidrag til et hvert miljø.',
+                    title: 'En lagspiller, lett å samarbeid med, og et positivt bidrag til et hvert miljø.',
                     description:
                         'Scelto leverer senior- og ekspertkompetanse innen systemutvikling og teknisk arkitektur på både Java og .Net.',
                     image: Employees,
@@ -59,18 +56,11 @@ const IndexPage = props => {
                             justifyContent: 'center',
                         }}
                     >
-                        {sortedAnsatte.map(({ name, title, key }) => {
-                            const image = props.data.EmployeeImages.edges.find(
-                                node => node.node.name === key
-                            );
+                        {sortedAnsatte.map(({ name, image, title, key }) => {
                             return (
                                 <EmployeeImageLink
                                     key={key}
-                                    image={
-                                        (image &&
-                                            image.node.childImageSharp.fixed) ||
-                                        DefaultEmployeeImage
-                                    }
+                                    image={image}
                                     name={name}
                                     title={title}
                                     to={`/ansatte/${key}`}
@@ -118,26 +108,5 @@ const IndexPage = props => {
         </Fragment>
     );
 };
-
-export const query = graphql`
-    query {
-        EmployeeImages: allFile(
-            sort: { order: ASC, fields: [absolutePath] }
-            filter: { relativePath: { regex: "/mugshots/.*.jpg/" } }
-        ) {
-            edges {
-                node {
-                    relativePath
-                    name
-                    childImageSharp {
-                        fixed(width: 300) {
-                            ...GatsbyImageSharpFixed
-                        }
-                    }
-                }
-            }
-        }
-    }
-`;
 
 export default IndexPage;

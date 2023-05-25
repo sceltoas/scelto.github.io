@@ -26,6 +26,7 @@ module.exports = {
                 trackingId: 'UA-58669694-1',
             },
         },
+        'gatsby-plugin-image'
     ],
     pathPrefix: '/next',
 };

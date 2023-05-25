@@ -1,5 +1,5 @@
-import {Link} from 'gatsby-link';
-import React, {Fragment} from 'react';
+import { Link } from 'gatsby-link';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import Footer from '../../components/Footer';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
@@ -8,8 +8,8 @@ import Section from '../../components/Section';
 import Favicon from '../../images/favicon.png';
 import HeaderImage from '../../images/silver-laptop-computer-next-to-ceramic-cup-42408.jpg';
 import DL from '../../images/tor_eric_crop.jpg';
-import {kunder} from '../../kunder';
-import {createMetadata} from '../../utils';
+import { kunder } from '../../kunder';
+import { createMetadata } from '../../utils';
 
 import './index.less';
 
@@ -18,8 +18,7 @@ const IndexPage = () => (
         <Helmet
             title="Scelto AS"
             meta={createMetadata({
-                title:
-                    'Scelto er en arbeidsplass hvor både det faglige og sosiale står i fokus.',
+                title: 'Scelto er en arbeidsplass hvor både det faglige og sosiale står i fokus.',
                 description:
                     'Vi jobber med noen av Norges mest spennende bedrifter og organisasjoner, og vi er alltid på jakt etter nye mennesker som kan være med å utvikle både selskapet og hverandre som mennesker.',
                 image: HeaderImage,
@@ -52,7 +51,7 @@ const IndexPage = () => (
         </Section>
         <Section title="Attraktive og spennende kunder">
             <div className="kunder">
-                {kunder.map(kunde => (
+                {kunder.map((kunde) => (
                     <img
                         key={kunde.name}
                         className="icon"

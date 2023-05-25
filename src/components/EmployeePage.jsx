@@ -1,12 +1,11 @@
-import React, {Fragment} from 'react';
-import {Fade} from 'react-awesome-reveal';
+import React, { Fragment } from 'react';
+import { Fade } from 'react-awesome-reveal';
 import Helmet from 'react-helmet';
-import {Parallax} from 'react-parallax';
-import {ansatteMedAssets} from '../ansatte-med-assets';
+import { Parallax } from 'react-parallax';
+import { ansatteMedAssets } from '../ansatte-med-assets';
 import Favicon from '../images/favicon.png';
-import DefaultEmployeeImage from '../images/mugshots/no-pic-yet.jpg';
-import {createMetadata} from '../utils';
-import {LightButtonAnchor} from './Button';
+import { createMetadata } from '../utils';
+import { LightButtonAnchor } from './Button';
 import CenteredText from './CenteredText';
 import EmployeeIntroWithImage from './EmployeeIntroWithImage';
 import './EmployeePage.less';
@@ -20,7 +19,7 @@ const currentOrigin =
         ? window.location.origin
         : 'https://scelto.no';
 
-const EmployeePage = props => {
+const EmployeePage = (props) => {
     const name = props.location.pathname
         .replace('/ansatte/', '')
         .replace('/', '');
@@ -29,10 +28,6 @@ const EmployeePage = props => {
     if (!employee) {
         return null;
     }
-
-    const image =
-        props.data &&
-        props.data.EmployeeImages.edges.find(node => node.node.name === name);
 
     return (
         <Fragment>
@@ -54,14 +49,8 @@ const EmployeePage = props => {
             <Navigation />
             <Section dark={true}>
                 <Fade>
-                    <EmployeeIntroWithImage
-                        employee={employee}
-                        image={
-                            (image && image.node.childImageSharp.fluid.src) ||
-                            DefaultEmployeeImage
-                        }
-                    />
-                    <Fragment>
+                    <EmployeeIntroWithImage employee={employee} />
+                    <div>
                         {employee.testimonial && (
                             <EmployeeTestimonial
                                 testimonial={employee.testimonial.text}
@@ -70,7 +59,7 @@ const EmployeePage = props => {
                                 customer={employee.testimonial.customer}
                             />
                         )}
-                    </Fragment>
+                    </div>
                 </Fade>
             </Section>
 

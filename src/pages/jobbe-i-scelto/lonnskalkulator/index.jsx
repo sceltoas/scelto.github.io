@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import Footer from '../../../components/Footer';
 import Navigation from '../../../components/Navigation';
@@ -7,7 +7,7 @@ import Section from '../../../components/Section';
 import HeaderImage from '../../../images/direction-scelto.jpeg';
 import Favicon from '../../../images/favicon.png';
 import DL from '../../../images/tor_eric_crop.jpg';
-import {createMetadata} from '../../../utils';
+import { createMetadata } from '../../../utils';
 
 import './index.less';
 
@@ -16,8 +16,7 @@ const IndexPage = () => (
         <Helmet
             title="Scelto AS"
             meta={createMetadata({
-                title:
-                    'I Scelto er de ansatte ansiktet utad og selve merkevaren. Du er en hyggelig, dyktig og erfaren Java-utvikler, .NET-utvikler, eller teknisk arkitekt.',
+                title: 'I Scelto er de ansatte ansiktet utad og selve merkevaren. Du er en hyggelig, dyktig og erfaren Java-utvikler, .NET-utvikler, eller teknisk arkitekt.',
                 description:
                     'Det vet vi å sette pris på med blant annet en svært god sosial kalender, gode forsikringer, godt miljø og ikke minst en av bransjens beste lønnsbetingelser.',
                 image: HeaderImage,

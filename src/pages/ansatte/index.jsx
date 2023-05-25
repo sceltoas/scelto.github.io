@@ -1,17 +1,15 @@
-import {graphql} from 'gatsby';
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
-import {sortedAnsatte} from '../../ansatte-med-assets';
+import { sortedAnsatte } from '../../ansatte-med-assets';
 import EmployeeImageLink from '../../components/EmployeeImageLink';
 import Footer from '../../components/Footer';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import Navigation from '../../components/Navigation';
 import Favicon from '../../images/favicon.png';
-import DefaultEmployeeImage from '../../images/mugshots/no-pic-yet.jpg';
 import SmartPeople from '../../images/smart-people.jpg';
-import {createMetadata} from '../../utils';
+import { createMetadata } from '../../utils';
 
-const IndexPage = props => {
+const IndexPage = (props) => {
     const title = 'Hva kjennetegner en Scelto-konsulent?';
     const description =
         'Vi er en gruppe positive og kunnskapsrike mennesker som bruker vår ekspertise for at din bedrift skal kunne yte best mulig. Våre konsulenters evne til å samarbeide tett med våre kunder og kolleger gjør at alle våre tjenester og produkter blir skreddersydd etter kundens ønske.';
@@ -24,9 +22,9 @@ const IndexPage = props => {
                     description,
                     image: SmartPeople,
                 })}
-                link={[{rel: 'icon', href: Favicon}]}
+                link={[{ rel: 'icon', href: Favicon }]}
             />
-            <Navigation/>
+            <Navigation />
             <FullPageImageWithHeader
                 image={SmartPeople}
                 title={title}
@@ -46,49 +44,19 @@ const IndexPage = props => {
                     margin: '50px 20px 0',
                 }}
             >
-                {sortedAnsatte.map(({name, title, key}) => {
-                    const image = props.data.EmployeeImages.edges.find(
-                        node => node.node.name === key
-                    );
-
-                    return (
-                        <EmployeeImageLink
-                            key={key}
-                            image={
-                                (image && image.node.childImageSharp.fixed) ||
-                                DefaultEmployeeImage
-                            }
-                            name={name}
-                            title={title}
-                            to={`/ansatte/${key}`}
-                        />
-                    );
-                })}
+                {sortedAnsatte.map(({ name, image, title, key }) => (
+                    <EmployeeImageLink
+                        key={key}
+                        image={image}
+                        name={name}
+                        title={title}
+                        to={`/ansatte/${key}`}
+                    />
+                ))}
             </div>
-            <Footer/>
+            <Footer />
         </Fragment>
     );
 };
-
-export const query = graphql`
-    query {
-        EmployeeImages: allFile(
-            sort: { order: ASC, fields: [absolutePath] }
-            filter: { relativePath: { regex: "/mugshots/.*.jpg/" } }
-        ) {
-            edges {
-                node {
-                    relativePath
-                    name
-                    childImageSharp {
-                        fixed(width: 300) {
-                            ...GatsbyImageSharpFixed
-                        }
-                    }
-                }
-            }
-        }
-    }
-`;
 
 export default IndexPage;

@@ -1,6 +1,6 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
-import Footer from "../../components/Footer";
+import Footer from '../../components/Footer';
 import FullPageImageWithHeader from '../../components/FullPageImageWithHeader';
 import Navigation from '../../components/Navigation';
 import Section from '../../components/Section';
@@ -25,7 +25,7 @@ import FnWheel from '../../images/fn/fn-wheel.png';
 
 import LaptopHands from '../../images/laptop-hands-floating-boxes.jpg';
 import HeaderImage from '../../images/silver-laptop-computer-next-to-ceramic-cup-42408.jpg';
-import {createMetadata} from '../../utils';
+import { createMetadata } from '../../utils';
 
 import './index.less';
 
@@ -58,20 +58,14 @@ const IndexPage = () => {
                     tilsvarer FNs bærekraftsmål:
                 </p>
                 <ul>
-                    <li>
-                        nr 5. "Likestilling mellom kjønnene"
-                    </li>
-                    <li>
-                        nr 10. "Mindre ulikhet"
-                    </li>
-                    <li>
-                        nr 13. "Stoppe klimaendringene".
-                    </li>
+                    <li>nr 5. "Likestilling mellom kjønnene"</li>
+                    <li>nr 10. "Mindre ulikhet"</li>
+                    <li>nr 13. "Stoppe klimaendringene".</li>
                 </ul>
                 <p>
-                    Vårt program Scelto i samfunnet er noe
-                    alle ansatte bidrar inn i og er stolte av å være en del av.
-                    Følgende målsettinger gjelder for Scelto i Samfunnet:
+                    Vårt program Scelto i samfunnet er noe alle ansatte bidrar
+                    inn i og er stolte av å være en del av. Følgende
+                    målsettinger gjelder for Scelto i Samfunnet:
                 </p>
                 <ol className={'fn-list'}>
                     <li>
@@ -85,12 +79,8 @@ const IndexPage = () => {
                             <li>
                                 Å satse på lokale oppdrag for å reise mindre
                             </li>
-                            <li>
-                                Ha en klimavennlig reise- og kontorpolicy
-                            </li>
-                            <li>
-                                Redusere co2 utslipp pr ansatt
-                            </li>
+                            <li>Ha en klimavennlig reise- og kontorpolicy</li>
+                            <li>Redusere co2 utslipp pr ansatt</li>
                         </ul>
                         <p>
                             Se vår klima- og miljørapport for ytterligere
@@ -105,20 +95,21 @@ const IndexPage = () => {
                         </p>
                         <ul>
                             <li>
-                                Medlemskap i Ada. Ada er et prosjekt ved NTNU som
-                                bidrar til at det uteksamineres flere kvinner fra
-                                teknologiutdanninger på NTNU som har lav
-                                kvinneandel.
+                                Medlemskap i Ada. Ada er et prosjekt ved NTNU
+                                som bidrar til at det uteksamineres flere
+                                kvinner fra teknologiutdanninger på NTNU som har
+                                lav kvinneandel.
                             </li>
                             <li>
                                 Et bevisst språk i bilde og tekstbruk i ekstern
                                 kommunikasjon.
                             </li>
                             <li>
-                                Støtte TENK tech camp og stille med mentor. Målet er
-                                at flere jenter skal interessere seg for teknologi
-                                og få kunnskap om hvordan de kan være med på å
-                                utvikle verdiskapende teknologi i fremtiden.
+                                Støtte TENK tech camp og stille med mentor.
+                                Målet er at flere jenter skal interessere seg
+                                for teknologi og få kunnskap om hvordan de kan
+                                være med på å utvikle verdiskapende teknologi i
+                                fremtiden.
                             </li>
                         </ul>
                     </li>
@@ -129,8 +120,8 @@ const IndexPage = () => {
                         </p>
                         <ul>
                             <li>
-                                Scelto skal være med å bidra til mindre ulikhet, økt
-                                integrering og inkludering i samfunnet.
+                                Scelto skal være med å bidra til mindre ulikhet,
+                                økt integrering og inkludering i samfunnet.
                             </li>
                             <li>
                                 Gratis sykkelservice for de ansatte fra På hjul
@@ -138,9 +129,9 @@ const IndexPage = () => {
                             </li>
                         </ul>
                         <p>
-                            Paahjul er et profesjonelt sykkelverksted
-                            eid av Kirkens Bymisjon. I tillegg til å reparere
-                            sykler, gir Paahjul arbeidstrening til mennesker med
+                            Paahjul er et profesjonelt sykkelverksted eid av
+                            Kirkens Bymisjon. I tillegg til å reparere sykler,
+                            gir Paahjul arbeidstrening til mennesker med
                             tidligere rusutfordringer. Velger du å reparere
                             sykkelen din hos Paahjul, er du med på å gjøre noe
                             godt for både miljøet og samfunnet.

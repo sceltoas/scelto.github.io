@@ -71,12 +71,7 @@ const EmployeeIntroWithImage = ({ employee, image }) => (
                 </a>
             )}
         </div>
-        <img
-            className={styles.image}
-            src={image}
-            width="100%"
-            alt={`${employee.name}`}
-        />
+        <div className={styles.image}>{employee.image}</div>
     </div>
 );
 

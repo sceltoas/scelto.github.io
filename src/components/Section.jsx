@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import {Fade} from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 import * as styles from './Section.module.less';
 
