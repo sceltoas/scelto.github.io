@@ -18,6 +18,7 @@ module.exports = {
                 path: path.join(__dirname, `src`, `images`),
             },
         },
+        'gatsby-plugin-image',
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         {
@@ -26,7 +27,6 @@ module.exports = {
                 trackingId: 'UA-58669694-1',
             },
         },
-        'gatsby-plugin-image'
     ],
     pathPrefix: '/next',
 };
