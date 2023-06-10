@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import Footer from '../components/Footer';
 import FullPageImageWithHeader from '../components/FullPageImageWithHeader';
@@ -9,15 +9,14 @@ import Favicon from '../images/favicon.png';
 import Arkitektur from '../images/icons/Scelto–illustration-arkitektur-dark-bg-big-tjenester.svg';
 import Systemutvikling from '../images/icons/Scelto–illustration-systemutvikling-light-bg-tjenester.svg';
 import Puzzle from '../images/puzzle.jpeg';
-import {createMetadata} from '../utils';
+import { createMetadata } from '../utils';
 
 const IndexPage = () => (
     <Fragment>
         <Helmet
             title="Scelto AS"
             meta={createMetadata({
-                title:
-                    'Scelto tilbyr ekspert-konsulenter innen systemutvikling og teknisk arkitektur',
+                title: 'Scelto tilbyr ekspert-konsulenter innen systemutvikling og teknisk arkitektur',
                 description:
                     'Systemutviklerne i Scelto har et høyt kompetansenivå på de fleste områder innen utvikling og metodikk - enten det gjelder frontend-utvikling med interaksjonsdesign, eller backend-utvikling på både Java- og .NET-plattform. Våre konsulenter har ofte teknisk ansvar eller teamansvar i kombinasjon med utviklerrollen.',
                 image: Puzzle,

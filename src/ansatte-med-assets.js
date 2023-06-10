@@ -1,3 +1,6 @@
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+
 import ansatte from './ansatte';
 import AndreasCV from './cvs/Andreas_Sagen_Aspaas.pdf';
 import AnnKatrinCV from './cvs/Ann-Katrin_Gagnat.pdf';
@@ -45,247 +48,325 @@ import HallvardBackground from './images/hallvard-background.jpg';
 import HermanBackground from './images/herms-background.jpg';
 import IvarBackground from './images/ivar_background.jpg';
 import Solbriller from './images/man-person-sunglasses-relaxing.jpeg';
-import Andreas from './images/mugshots/andreas.jpg';
-import AnnKatrin from './images/mugshots/annkatrin.jpg';
-import Bard from './images/mugshots/baard.jpg';
-import Eirik from './images/mugshots/eirik.jpg';
-import Endre from './images/mugshots/endre.jpg';
-import Erik from './images/mugshots/erik.jpg';
-import ErikE from './images/mugshots/erike.jpg';
-import Erlend from './images/mugshots/erlend.jpg';
-import Frederik from './images/mugshots/frederik.jpg';
-import FredrikB from './images/mugshots/fredrikb.jpg';
-import FredrikS from './images/mugshots/fredriks.jpg';
-import Gustav from './images/mugshots/gustav.jpg';
-import Haaken from './images/mugshots/haaken.jpg';
-import Haakon from './images/mugshots/haakon.jpg';
-import Hallvard from './images/mugshots/hallvard.jpg';
-import Herman from './images/mugshots/herman.jpg';
-import Ida from './images/mugshots/ida.jpg';
-import Ismar from './images/mugshots/ismar.jpg';
-import Ivar from './images/mugshots/ivar.jpg';
-import JanErik from './images/mugshots/janerik.jpg';
-import Jorgen from './images/mugshots/jorgen.jpg';
-import Ken from './images/mugshots/ken.jpg';
-import KjellOlav from './images/mugshots/kjellolav.jpg';
-import LarsOlav from './images/mugshots/larsolav.jpg';
-import Marius from './images/mugshots/marius.jpg';
-import OleTommy from './images/mugshots/oletommy.jpg';
-import Richard from './images/mugshots/richard.jpg';
-import Sean from './images/mugshots/sean.jpg';
-import Terje from './images/mugshots/terje.jpg';
-import TorAtle from './images/mugshots/toratle.jpg';
-import TorEric from './images/mugshots/toreric.jpg';
-import Vetle from './images/mugshots/vetle.jpg';
 import Music from './images/music_lover.jpeg';
 
 import Skateboard from './images/skateboard.jpg';
 import TorEricBackground from './images/tor_eric_fisk.jpg';
 import Yoga from './images/yoga.jpeg';
-import {showAvailableConsultantsFirst} from './utils';
+import { showAvailableConsultantsFirst } from './utils';
+
+const imageProps = {
+    width: 300,
+    height: 450,
+    alt: '',
+    formats: ["jpg"]
+};
 
 export const ansatteMedAssets = {
     toreric: {
         ...ansatte.toreric,
-        image: TorEric,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/toreric.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: TorEricCV,
         customImage: TorEricBackground,
     },
     oletommy: {
         ...ansatte.oletommy,
-        image: OleTommy,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/oletommy.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: OleTommyCV,
         customImage: RetroSykkel,
     },
     herman: {
         ...ansatte.herman,
-        image: Herman,
+        image: (
+            <StaticImage src={'./images/mugshots/herman.jpg'} {...imageProps} />
+        ),
         linkToCV: HermanCV,
         customImage: HermanBackground,
     },
     haaken: {
         ...ansatte.haaken,
-        image: Haaken,
+        image: (
+            <StaticImage src={'./images/mugshots/haaken.jpg'} {...imageProps} />
+        ),
         linkToCV: HaakenCV,
         customImage: RetroSykkel,
     },
     marius: {
         ...ansatte.marius,
-        image: Marius,
+        image: (
+            <StaticImage src={'./images/mugshots/marius.jpg'} {...imageProps} />
+        ),
         linkToCV: MariusCV,
         customImage: Nerd,
     },
     gustav: {
         ...ansatte.gustav,
-        image: Gustav,
+        image: (
+            <StaticImage src={'./images/mugshots/gustav.jpg'} {...imageProps} />
+        ),
         linkToCV: GustavCV,
         customImage: Kode,
     },
     erlend: {
         ...ansatte.erlend,
-        image: Erlend,
+        image: (
+            <StaticImage src={'./images/mugshots/erlend.jpg'} {...imageProps} />
+        ),
         linkToCV: ErlendCV,
         customImage: Scooter,
     },
     richard: {
         ...ansatte.richard,
-        image: Richard,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/richard.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: RichardCV,
         customImage: Bybilde,
     },
     erik: {
         ...ansatte.erik,
-        image: Erik,
+        image: (
+            <StaticImage src={'./images/mugshots/erik.jpg'} {...imageProps} />
+        ),
         linkToCV: ErikCV,
         customImage: Skateboard,
     },
     janerik: {
         ...ansatte.janerik,
-        image: JanErik,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/janerik.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: JanErikCV,
         customImage: Solbriller,
     },
     ivar: {
         ...ansatte.ivar,
-        image: Ivar,
+        image: (
+            <StaticImage src={'./images/mugshots/ivar.jpg'} {...imageProps} />
+        ),
         linkToCV: IvarCV,
         customImage: IvarBackground,
     },
     vetle: {
         ...ansatte.vetle,
-        image: Vetle,
+        image: (
+            <StaticImage src={'./images/mugshots/vetle.jpg'} {...imageProps} />
+        ),
         linkToCV: VetleCV,
         customImage: RustenBil,
     },
     sean: {
         ...ansatte.sean,
-        image: Sean,
+        image: (
+            <StaticImage src={'./images/mugshots/sean.jpg'} {...imageProps} />
+        ),
         linkToCV: SeanCV,
         customImage: RustenBil,
     },
     ken: {
         ...ansatte.ken,
-        image: Ken,
+        image: (
+            <StaticImage src={'./images/mugshots/ken.jpg'} {...imageProps} />
+        ),
         linkToCV: KenCV,
         customImage: RustenBil,
     },
     fredrikb: {
         ...ansatte.fredrikb,
-        image: FredrikB,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/fredrikb.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: FredrikbCV,
         customImage: RustenBil,
     },
     fredriks: {
         ...ansatte.fredriks,
-        image: FredrikS,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/fredriks.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: FredriksCV,
         customImage: RustenBil,
     },
     terje: {
         ...ansatte.terje,
-        image: Terje,
+        image: (
+            <StaticImage src={'./images/mugshots/terje.jpg'} {...imageProps} />
+        ),
         linkToCV: TerjeCV,
         customImage: Music,
     },
     larsolav: {
         ...ansatte.larsolav,
-        image: LarsOlav,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/larsolav.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: LarsOlavCV,
         customImage: Cards,
     },
     annkatrin: {
         ...ansatte.annkatrin,
-        image: AnnKatrin,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/annkatrin.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: AnnKatrinCV,
         customImage: Music,
     },
     jorgen: {
         ...ansatte.jorgen,
-        image: Jorgen,
+        image: (
+            <StaticImage src={'./images/mugshots/jorgen.jpg'} {...imageProps} />
+        ),
         linkToCV: JoergenCV,
         customImage: Music,
     },
     baard: {
         ...ansatte.baard,
-        image: Bard,
+        image: (
+            <StaticImage src={'./images/mugshots/baard.jpg'} {...imageProps} />
+        ),
         linkToCV: '#',
         customImage: Music,
     },
     andreas: {
         ...ansatte.andreas,
-        image: Andreas,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/andreas.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: AndreasCV,
         customImage: AndreasBackground,
     },
     hallvard: {
         ...ansatte.hallvard,
-        image: Hallvard,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/hallvard.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: HallvardCV,
         customImage: HallvardBackground,
     },
     ismar: {
         ...ansatte.ismar,
-        image: Ismar,
+        image: (
+            <StaticImage src={'./images/mugshots/ismar.jpg'} {...imageProps} />
+        ),
         linkToCV: IsmarCV,
         customImage: Yoga,
     },
     haakon: {
         ...ansatte.haakon,
-        image: Haakon,
+        image: (
+            <StaticImage src={'./images/mugshots/haakon.jpg'} {...imageProps} />
+        ),
         linkToCV: HaakonCV,
         customImage: HaakonBackground,
     },
     frederik: {
         ...ansatte.frederik,
-        image: Frederik,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/frederik.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: FrederikCV,
         customImage: FrederikBackground,
     },
     eirik: {
         ...ansatte.eirik,
-        image: Eirik,
+        image: (
+            <StaticImage src={'./images/mugshots/eirik.jpg'} {...imageProps} />
+        ),
         linkToCV: EirikCV,
         customImage: Nerd,
     },
     erike: {
         ...ansatte.erike,
-        image: ErikE,
+        image: (
+            <StaticImage src={'./images/mugshots/erike.jpg'} {...imageProps} />
+        ),
         linkToCV: ErikeCV,
         customImage: Yoga,
     },
     toratle: {
         ...ansatte.toratle,
-        image: TorAtle,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/toratle.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCv: TorAtleCV,
         customImage: Yoga,
     },
     endre: {
         ...ansatte.endre,
-        image: Endre,
+        image: (
+            <StaticImage src={'./images/mugshots/endre.jpg'} {...imageProps} />
+        ),
         linkToCv: EndreCV,
         customImage: Yoga,
     },
     kjellolav: {
         ...ansatte.kjellolav,
-        image: KjellOlav,
+        image: (
+            <StaticImage
+                src={'./images/mugshots/kjellolav.jpg'}
+                {...imageProps}
+            />
+        ),
         linkToCV: KjellOlavCV,
         customImage: Yoga,
     },
     ida: {
         ...ansatte.ida,
-        image: Ida,
+        image: (
+            <StaticImage src={'./images/mugshots/ida.jpg'} {...imageProps} />
+        ),
         linkToCv: IdaCV,
         customImage: Cards,
     },
 };
 
 export const ansatteArray = () =>
-    Object.keys(ansatteMedAssets).map(key => {
+    Object.keys(ansatteMedAssets).map((key) => {
         let ansatt = ansatteMedAssets[key];
         ansatt.key = key;
         return ansatt;
     });
 
 export const sortedAnsatte = ansatteArray()
-    .map(ansatt => ansatt)
+    .map((ansatt) => ansatt)
     .sort(showAvailableConsultantsFirst);

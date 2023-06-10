@@ -1,7 +1,7 @@
-import React, {Fragment} from 'react';
-import {Fade} from 'react-awesome-reveal';
+import React, { Fragment } from 'react';
+import { Fade } from 'react-awesome-reveal';
 import Helmet from 'react-helmet';
-import {LightButton} from '../components/Button';
+import { LightButton } from '../components/Button';
 import Footer from '../components/Footer';
 import FullPageImageWithContent from '../components/FullPageImageWithContent';
 import InlineInput from '../components/InlineInput';
@@ -9,7 +9,7 @@ import Navigation from '../components/Navigation';
 import Working from '../images/contact.jpg';
 import Favicon from '../images/favicon.png';
 import DL from '../images/tor_eric_crop.jpg';
-import {createMetadata} from '../utils';
+import { createMetadata } from '../utils';
 import * as styles from './kontakt.module.less';
 
 class IndexPage extends React.Component {
@@ -25,7 +25,7 @@ class IndexPage extends React.Component {
     onPhoneChanged(event) {
         this.setState({ ...this.state, number: event.target.value });
     }
-    sendMail = event => {
+    sendMail = (event) => {
         if (this.state.loading) {
             event.preventDefault();
             event.stopPropagation();
@@ -44,7 +44,7 @@ class IndexPage extends React.Component {
                     PhoneNumber: this.state.number,
                 }),
             })
-            .then(response => {
+            .then((response) => {
                 console.info('response %o', response);
                 if (response.ok) {
                     this.setState({
@@ -55,8 +55,7 @@ class IndexPage extends React.Component {
                 } else {
                     this.setState({
                         ...this.state,
-                        error:
-                            'Vi klarte ikke å sende din kontaktinfo akkurat nå. Vennligst prøv senere.',
+                        error: 'Vi klarte ikke å sende din kontaktinfo akkurat nå. Vennligst prøv senere.',
                         loading: false,
                     });
                 }

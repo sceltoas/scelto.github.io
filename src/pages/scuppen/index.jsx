@@ -1,11 +1,11 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import Navigation from '../../components/Navigation';
 import Section from '../../components/Section';
 import Favicon from '../../images/favicon.png';
 import Puzzle from '../../images/puzzle.jpeg';
-import {getScores, rounds} from '../../scores';
-import {createMetadata} from '../../utils';
+import { getScores, rounds } from '../../scores';
+import { createMetadata } from '../../utils';
 
 import './index.less';
 import Footer from '../../components/Footer';
@@ -15,8 +15,7 @@ const IndexPage = () => (
         <Helmet
             title="Scelto AS"
             meta={createMetadata({
-                title:
-                    'Scelto tilbyr ekspertkonsulenter innen systemutvikling og teknisk arkitektur',
+                title: 'Scelto tilbyr ekspertkonsulenter innen systemutvikling og teknisk arkitektur',
                 image: Puzzle,
             })}
             link={[{ rel: 'icon', href: Favicon }]}

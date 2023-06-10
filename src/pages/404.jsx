@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import CountUp from 'react-countup';
 import Helmet from 'react-helmet';
 import Footer from '../components/Footer';

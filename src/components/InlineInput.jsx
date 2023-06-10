@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import './InlineInput.less';
 
 class InlineInput extends React.Component {
@@ -66,7 +66,7 @@ class InlineInput extends React.Component {
             <Fragment>
                 <div
                     id={`hidden-${id}`}
-                    ref={ref => (this.divElement = ref)}
+                    ref={(ref) => (this.divElement = ref)}
                     style={{
                         minWidth: minWidth != null ? minWidth : 'auto',
                     }}
@@ -83,7 +83,7 @@ class InlineInput extends React.Component {
                         width: this.state.width,
                     }}
                     placeholder={placeholder}
-                    ref={ref => (this.inputElement = ref)}
+                    ref={(ref) => (this.inputElement = ref)}
                     maxLength={maxLength}
                     aria-autocomplete="none"
                     onKeyDown={this.onKeyDown}

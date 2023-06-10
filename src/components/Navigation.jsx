@@ -1,4 +1,4 @@
-import {Link as GatsbyLink} from 'gatsby';
+import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';
 import CloseMenu from '../images/icons/Scelto–icon-close-hover.svg';
 import MenuIcon from '../images/icons/Scelto–icon-menu.svg';
@@ -43,7 +43,7 @@ class Navigation extends React.Component {
 
                                 <button
                                     id="mobile-menu-open"
-                                    onClick={event => {
+                                    onClick={(event) => {
                                         this.toggleMenu();
                                         event.stopPropagation();
                                     }}

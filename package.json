@@ -7,6 +7,7 @@
     "countup.js": "^2.6.0",
     "gatsby": "^5.9.0",
     "gatsby-plugin-google-analytics": "^5.9.0",
+    "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-postcss": "^6.9.0",
     "gatsby-plugin-react-helmet": "^6.9.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
@@ -29,9 +30,9 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "npm run format && gatsby build && npm run test",
+    "build": "npm run format && gatsby clean && gatsby build && npm run test",
     "start": "gatsby develop -H 0.0.0.0",
-    "start:prod": "gatsby build && gatsby serve -o -H 0.0.0.0",
+    "start:prod": "gatsby clean && gatsby build && gatsby serve -o -H 0.0.0.0",
     "format": "prettier  --write \"src/**/*.{js,jsx,less}\"",
     "test": "node src/__tests__/test.js"
   },

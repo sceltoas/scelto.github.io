@@ -2,7 +2,7 @@ const ansatteliste = require('../ansatte');
 const fs = require('fs');
 const path = require('path');
 
-const fileExists = path => {
+const fileExists = (path) => {
     try {
         fs.accessSync(path, fs.constants.F_OK);
         return true;
@@ -13,7 +13,7 @@ const fileExists = path => {
 
 const errors = [];
 
-const checkIfProfilePageIsGenerated = ansatt => {
+const checkIfProfilePageIsGenerated = (ansatt) => {
     try {
         fileExists(
             path.join(
@@ -29,7 +29,7 @@ const checkIfProfilePageIsGenerated = ansatt => {
     }
 };
 
-const checkIfAnsattMugshotIsAdded = ansatt => {
+const checkIfAnsattMugshotIsAdded = (ansatt) => {
     try {
         const profilePicture = path.join(
             __dirname,
@@ -45,7 +45,7 @@ const checkIfAnsattMugshotIsAdded = ansatt => {
 };
 
 const checkAllAnsatte = () => {
-    Object.keys(ansatteliste).forEach(ansatt => {
+    Object.keys(ansatteliste).forEach((ansatt) => {
         checkIfProfilePageIsGenerated(ansatt);
         checkIfAnsattMugshotIsAdded(ansatt);
     });
@@ -55,7 +55,7 @@ checkAllAnsatte();
 
 if (errors.length > 0) {
     console.error(`Found ${errors.length} error(s):`);
-    errors.forEach(error => console.error(`[ERROR] - ${error.message}`));
+    errors.forEach((error) => console.error(`[ERROR] - ${error.message}`));
 
     process.exit(1);
 } else {

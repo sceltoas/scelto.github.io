@@ -1,4 +1,4 @@
-import {Link as GLink} from 'gatsby';
+import { Link as GLink } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import * as styles from './Link.module.less';

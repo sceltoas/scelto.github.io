@@ -6,201 +6,135 @@ const NOT_PARTICIPATED = -2;
 const participants = [
     {
         name: 'Andreas',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Ann Katrin',
-        results: [
-            PARTICIPATED
-        ],
+        results: [PARTICIPATED],
     },
     {
         name: 'Bård',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Eirik',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Endre',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Erik E',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Erik S',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Erlend',
-        results: [
-            2
-        ],
+        results: [2],
     },
     {
         name: 'Frederik',
-        results: [
-            PARTICIPATED
-        ],
+        results: [PARTICIPATED],
     },
     {
         name: 'Fredrik B',
-        results: [
-            PARTICIPATED
-        ],
+        results: [PARTICIPATED],
     },
     {
         name: 'Fredrik S',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Gustav',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Hallvard',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Herman',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Håken',
-        results: [
-            1
-        ],
+        results: [1],
     },
     {
         name: 'Håkon',
-        results: [
-            3
-        ],
+        results: [3],
     },
     {
         name: 'Ismar',
-        results: [
-            PARTICIPATED
-        ],
+        results: [PARTICIPATED],
     },
     {
         name: 'Ivar',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Jan Erik',
-        results: [
-            PARTICIPATED
-        ],
+        results: [PARTICIPATED],
     },
     {
         name: 'Jørgen',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Ken',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Kent',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Lars Olav',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Marius',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Ole Tommy',
-        results: [
-            PARTICIPATED
-        ],
+        results: [PARTICIPATED],
     },
     {
         name: 'Peter',
-        results: [
-            1
-        ],
+        results: [1],
     },
     {
         name: 'Richard',
-        results: [
-            3
-        ],
+        results: [3],
     },
     {
         name: 'Seán',
-        results: [
-            PARTICIPATED
-        ],
+        results: [PARTICIPATED],
     },
     {
         name: 'Terje',
-        results: [
-            4
-        ],
+        results: [4],
     },
     {
         name: 'Tom Erik',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Tor Atle',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Tor Eric',
-        results: [
-            NOT_PARTICIPATED
-        ],
+        results: [NOT_PARTICIPATED],
     },
     {
         name: 'Vetle',
-        results: [
-            2
-        ],
+        results: [2],
     },
 ];
 
@@ -241,7 +175,7 @@ function calcScore(participant) {
         resultList: scores.join(', '),
         score: totalScore,
         scoreValues: scoreValues,
-    }
+    };
 }
 
 function calcCountingScore(participant) {
@@ -250,8 +184,8 @@ function calcCountingScore(participant) {
         countingScore: participant.scoreValues.reduce(
             (acc, curr) => acc + curr,
             0
-        )
-    }
+        ),
+    };
 }
 
 export function getScores() {
@@ -259,5 +193,5 @@ export function getScores() {
         .map(calcScore)
         .map(calcCountingScore)
         .sort((a, b) => a.countingScore - b.countingScore)
-        .reverse()
+        .reverse();
 }
