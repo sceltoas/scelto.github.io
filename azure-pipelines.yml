@@ -20,11 +20,13 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- task: AzureRmWebAppDeployment@4
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
     azureSubscription: 'MPN Azure'
     appType: 'webApp'
-    WebAppName: 'sceltoweb'
-    ResourceGroupName: 'scelto-web-migrate'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/public'
+    appName: 'sceltoweb'
+    deployToSlotOrASE: true
+    resourceGroupName: 'scelto-web-migrate'
+    slotName: 'staging'
+    package: '$(System.DefaultWorkingDirectory)/public'
+    deploymentMethod: 'auto'
