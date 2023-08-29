@@ -57,7 +57,7 @@ const Footer = () => (
             <div className={styles.copyright}>Scelto AS &copy; 2016</div>
             <div className="">
                 <a
-                    href="https://www.miljofyrtarn.no/"
+                    href="https://rapportering.miljofyrtarn.no/stats/150378"
                     alt="Scelto er sertifisert miljøfyrtårn. Interesserte kan få miljørapporten ved henvendelser til bedriften."
                     title="Interesserte kan få miljørapporten ved henvendelser til bedriften"
                     target="_new"
