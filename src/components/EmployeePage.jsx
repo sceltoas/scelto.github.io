@@ -5,7 +5,6 @@ import { Parallax } from 'react-parallax';
 import { ansatteMedAssets } from '../ansatte-med-assets';
 import Favicon from '../images/favicon.png';
 import { createMetadata } from '../utils';
-import { LightButtonAnchor } from './Button';
 import CenteredText from './CenteredText';
 import EmployeeIntroWithImage from './EmployeeIntroWithImage';
 import './EmployeePage.less';
@@ -77,11 +76,6 @@ const EmployeePage = (props) => {
                                 <p>{section}</p>
                             </Fade>
                         ))}
-                    <div className="sc-button-container">
-                        <LightButtonAnchor
-                            href={employee.linkToCV}
-                        >{`Last ned ${employee.firstName} sin CV`}</LightButtonAnchor>
-                    </div>
                 </React.Fragment>
             </Section>
             <Parallax bgImage={employee.customImage}>
